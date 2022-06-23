@@ -23,7 +23,7 @@ metric2.metric('Sessions', len(get_sessions(username)))
 metric3.metric('Time Played', seconds_to_time(time_played(username)))
 metric4.metric('Last Played', time_ago(str(get_sessions(username).iloc[0]["Date"]).split(' ')[0]))
 
-
+st.write(days_user_played(username))
 st.write(plot_calendar(username))
 
 # make a dropdown menu to select a session

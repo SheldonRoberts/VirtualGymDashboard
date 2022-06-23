@@ -35,7 +35,7 @@ def days_user_played(username:str) -> pd.DataFrame:
         GROUP BY "Date"
     """.format(username)
     df = pd.read_sql(query, db_connection)
-    df['Date'] = pd.to_datetime(df['Date'].map(lambda x: x.replace('.', ':')))
+    df['Date'] = pd.to_datetime(df['Date'].map(lambda x: x.split('T')[0]))
     return df
 
 

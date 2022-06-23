@@ -7,7 +7,6 @@ import plotly.express as px
 import plotly.graph_objects as go
 from plotly_calplot import calplot
 from queries import *
-from datetime import datetime
 
 @st.cache
 def plot_scatter(df: pd.DataFrame, labels: list[str]) -> px.scatter_3d:
@@ -25,11 +24,11 @@ def plot_scatter(df: pd.DataFrame, labels: list[str]) -> px.scatter_3d:
     fig.add_trace(go.Scatter3d(x=[0], y=[0], z=[1.4], mode='text', text=['x'], textposition='top center'))
     return fig
 
-@st.cache
 def plot_calendar(username: str) -> calplot:
     # display a calendar of the days the user played
+    df = days_user_played(username)
     fig = calplot(
-            days_user_played(username),
+            df,
             x="Date",
             y="sessions",
             gap = 1,
