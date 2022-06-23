@@ -5,16 +5,12 @@ import matplotlib.pyplot as plt
 from mpl_toolkits.mplot3d import Axes3D
 import plotly.express as px
 import plotly.graph_objects as go
-from helpers import seconds_to_time
+from helpers import *
 from queries import *
 from plots import *
 
 st.set_page_config(layout="wide")
 st.title('Virtual Gym Dashboard')
-st.markdown('Select a user to see their progress')
-
-
-
 
 # make a dropdown menu to select a user
 username = st.selectbox('User', get_users())
@@ -22,10 +18,13 @@ username = st.selectbox('User', get_users())
 # display some metrics about the user
 # create 4 columns
 metric1, metric2, metric3, metric4 = st.columns(4)
-
 metric1.metric('Platform', get_sessions(username)["Platform"][0])
 metric2.metric('Sessions', len(get_sessions(username)))
 metric3.metric('Time Played', seconds_to_time(time_played(username)))
+metric4.metric('Last Played', time_ago(str(get_sessions(username).iloc[0]["Date"]).split(' ')[0]))
+
+
+st.write(plot_calendar(username))
 
 # make a dropdown menu to select a session
 session_id = st.selectbox('Session', get_sessions(username)["SessionId"].tolist())

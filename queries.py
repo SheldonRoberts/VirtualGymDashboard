@@ -24,6 +24,21 @@ def time_played(username:str) -> float:
     """.format(username)
     return pd.read_sql(query, db_connection)['Time'][0]
 
+def days_user_played(username:str) -> pd.DataFrame:
+    """
+    Returns a list of the days a user played
+    """
+    query = """
+        SELECT "Date", COUNT("Date") AS "sessions"
+        FROM sessions
+        WHERE "UserName" = '{}'
+        GROUP BY "Date"
+    """.format(username)
+    df = pd.read_sql(query, db_connection)
+    df['Date'] = pd.to_datetime(df['Date'].map(lambda x: x.replace('.', ':')))
+    return df
+
+
 @st.cache
 def get_users() -> list:
     """
@@ -35,7 +50,6 @@ def get_users() -> list:
     """
     return pd.read_sql(query, con=db_connection)['UserName'].tolist()
 
-@st.cache
 def get_sessions(user: str) -> list:
     """
     Returns a dataframe of sessions for a user
@@ -45,7 +59,10 @@ def get_sessions(user: str) -> list:
         FROM sessions
         WHERE "UserName" = '{}';
     """.format(user)
-    return pd.read_sql(query, con=db_connection)
+    df = pd.read_sql(query, con=db_connection)
+    df['Date'] = pd.to_datetime(df['Date'].map(lambda x: x.replace('.', ':')))
+    df = df.sort_values('Date', ascending=False)
+    return df
 
 @st.cache
 def get_session_data(session_id: str) -> pd.DataFrame:
