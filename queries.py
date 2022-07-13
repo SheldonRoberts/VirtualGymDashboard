@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 
-db_connection = 'crate://142.244.110.140:8004'
+db_connection = 'crate://129.128.159.94:4200/'
 
 @st.cache
 def time_played(username:str) -> float:

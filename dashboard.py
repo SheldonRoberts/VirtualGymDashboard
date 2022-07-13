@@ -53,6 +53,13 @@ if session_df is not None:
     ]
     st.plotly_chart(plot_scatter(df_right_xyz, ['CenterEyeAnchor_posx', 'CenterEyeAnchor_posz', 'CenterEyeAnchor_posy']))
 
+st.subheader("Max reach (cm)")
+reach_left, reach_right, reach_up, reach_down, reach_forward = st.columns(5)
+reach_left.metric("Left", 134, 5)
+reach_right.metric("Right", 129, -5)
+reach_up.metric("Up", 122, 13)
+reach_down.metric("Down", 70, 3)
+reach_forward.metric("Forward", 104, 11)
 
 
 
