@@ -1,0 +1,1073 @@
+
+  You can now view your Streamlit app in your browser.
+
+  Network URL: http://129.128.159.94:8501
+  External URL: http://129.128.159.94:8501
+
+  Stopping...
+Traceback (most recent call last):
+  File "/home/virtualgym/.local/bin/streamlit", line 5, in <module>
+    from streamlit.cli import main
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/streamlit/__init__.py", line 70, in <module>
+    from streamlit.delta_generator import DeltaGenerator as _DeltaGenerator
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/streamlit/delta_generator.py", line 90, in <module>
+    from streamlit.elements.arrow_altair import ArrowAltairMixin
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/streamlit/elements/arrow_altair.py", line 25, in <module>
+    import altair as alt
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/altair/__init__.py", line 4, in <module>
+    from .vegalite import *
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/altair/vegalite/__init__.py", line 2, in <module>
+    from .v4 import *
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/altair/vegalite/v4/__init__.py", line 2, in <module>
+    from .schema import *
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/altair/vegalite/v4/schema/__init__.py", line 2, in <module>
+    from .core import *
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/altair/vegalite/v4/schema/core.py", line 4, in <module>
+    from altair.utils.schemapi import SchemaBase, Undefined, _subclasses
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/altair/utils/__init__.py", line 14, in <module>
+    from .plugin_registry import PluginRegistry
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/altair/utils/plugin_registry.py", line 5, in <module>
+    from toolz import curry
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/toolz/__init__.py", line 20, in <module>
+    from . import curried, sandbox
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/toolz/curried/__init__.py", line 27, in <module>
+    from . import operator
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/toolz/curried/operator.py", line 14, in <module>
+    {name: curry(f) if should_curry(f) else f
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/toolz/curried/operator.py", line 14, in <dictcomp>
+    {name: curry(f) if should_curry(f) else f
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/toolz/curried/operator.py", line 9, in should_curry
+    num = num_required_args(f)
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/toolz/functoolz.py", line 866, in num_required_args
+    sigspec, rv = _check_sigspec(sigspec, func, _sigs._num_required_args,
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/toolz/functoolz.py", line 827, in _check_sigspec
+    sigspec = inspect.signature(func)
+  File "/usr/lib/python3.8/inspect.py", line 3105, in signature
+    return Signature.from_callable(obj, follow_wrapped=follow_wrapped)
+  File "/usr/lib/python3.8/inspect.py", line 2854, in from_callable
+    return _signature_from_callable(obj, sigcls=cls,
+  File "/usr/lib/python3.8/inspect.py", line 2308, in _signature_from_callable
+    return _signature_from_builtin(sigcls, obj,
+  File "/usr/lib/python3.8/inspect.py", line 2121, in _signature_from_builtin
+    return _signature_fromstr(cls, func, s, skip_bound_arg)
+  File "/usr/lib/python3.8/inspect.py", line 1981, in _signature_fromstr
+    _signature_strip_non_python_syntax(s)
+  File "/usr/lib/python3.8/inspect.py", line 1934, in _signature_strip_non_python_syntax
+    for t in token_stream:
+  File "/usr/lib/python3.8/tokenize.py", line 525, in _tokenize
+    pseudomatch = _compile(PseudoToken).match(line, pos)
+  File "/usr/lib/python3.8/tokenize.py", line 99, in _compile
+    return re.compile(expr, re.UNICODE)
+  File "/usr/lib/python3.8/re.py", line 252, in compile
+    return _compile(pattern, flags)
+  File "/usr/lib/python3.8/re.py", line 291, in _compile
+    if isinstance(flags, RegexFlag):
+KeyboardInterrupt
+
+  You can now view your Streamlit app in your browser.
+
+  Network URL: http://129.128.184.214:8099
+  External URL: http://129.128.184.214:8099
+
+  Stopping...
+  Stopping...
+  Stopping...
+  Stopping...
+  Stopping...
+  Stopping...
+  Stopping...
+  Stopping...
+2022-07-21 12:36:10.885 Retrying (Retry(total=9, connect=None, read=0, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fbad12845b0>: Failed to establish a new connection: [Errno 110] Connection timed out')': /
+2022-07-21 12:38:21.961 Retrying (Retry(total=8, connect=None, read=0, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fbad69e5910>: Failed to establish a new connection: [Errno 110] Connection timed out')': /
+2022-07-21 12:40:33.029 Retrying (Retry(total=7, connect=None, read=0, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fbad22333d0>: Failed to establish a new connection: [Errno 110] Connection timed out')': /
+2022-07-21 12:42:44.105 Retrying (Retry(total=6, connect=None, read=0, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fbad2233490>: Failed to establish a new connection: [Errno 110] Connection timed out')': /
+2022-07-21 12:44:55.177 Retrying (Retry(total=5, connect=None, read=0, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fbad2233610>: Failed to establish a new connection: [Errno 110] Connection timed out')': /
+2022-07-21 12:47:06.245 Retrying (Retry(total=4, connect=None, read=0, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fbad2233850>: Failed to establish a new connection: [Errno 110] Connection timed out')': /
+2022-07-21 12:49:17.317 Retrying (Retry(total=3, connect=None, read=0, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fbad22338e0>: Failed to establish a new connection: [Errno 110] Connection timed out')': /
+2022-07-21 12:51:28.389 Retrying (Retry(total=2, connect=None, read=0, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fbad2233a90>: Failed to establish a new connection: [Errno 110] Connection timed out')': /
+2022-07-21 12:53:39.461 Retrying (Retry(total=1, connect=None, read=0, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fbad2233cd0>: Failed to establish a new connection: [Errno 110] Connection timed out')': /
+2022-07-21 12:55:50.537 Retrying (Retry(total=0, connect=None, read=0, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fbad2233e80>: Failed to establish a new connection: [Errno 110] Connection timed out')': /
+2022-07-21 13:00:12.677 Retrying (Retry(total=9, connect=None, read=0, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fbad24d9be0>: Failed to establish a new connection: [Errno 110] Connection timed out')': /_sql
+2022-07-21 13:02:23.749 Retrying (Retry(total=8, connect=None, read=0, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fbad22331f0>: Failed to establish a new connection: [Errno 110] Connection timed out')': /_sql
+2022-07-21 13:04:34.821 Retrying (Retry(total=7, connect=None, read=0, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fbad2233670>: Failed to establish a new connection: [Errno 110] Connection timed out')': /_sql
+2022-07-21 13:06:45.893 Retrying (Retry(total=6, connect=None, read=0, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fbad2233790>: Failed to establish a new connection: [Errno 110] Connection timed out')': /_sql
+2022-07-21 13:08:56.965 Retrying (Retry(total=5, connect=None, read=0, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fbad2233a00>: Failed to establish a new connection: [Errno 110] Connection timed out')': /_sql
+2022-07-21 13:11:08.037 Retrying (Retry(total=4, connect=None, read=0, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fbad2233d90>: Failed to establish a new connection: [Errno 110] Connection timed out')': /_sql
+2022-07-21 13:13:19.109 Retrying (Retry(total=3, connect=None, read=0, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fbad2233cd0>: Failed to establish a new connection: [Errno 110] Connection timed out')': /_sql
+2022-07-21 13:15:30.181 Retrying (Retry(total=2, connect=None, read=0, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fbad2233d60>: Failed to establish a new connection: [Errno 110] Connection timed out')': /_sql
+2022-07-21 13:17:41.253 Retrying (Retry(total=1, connect=None, read=0, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fbad2233760>: Failed to establish a new connection: [Errno 110] Connection timed out')': /_sql
+2022-07-21 13:19:52.329 Retrying (Retry(total=0, connect=None, read=0, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fbad2233730>: Failed to establish a new connection: [Errno 110] Connection timed out')': /_sql
+2022-07-21 13:22:03.401 Removed server http://129.128.159.94:4200 from active pool
+2022-07-21 13:22:03.403 Restored server http://129.128.159.94:4200 into active pool
+2022-07-21 13:22:03.403 Removed server http://129.128.159.94:4200 from active pool
+2022-07-21 13:22:03.404 Uncaught app exception
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 251, in _get_conn
+    conn = self.pool.get(block=self.block, timeout=timeout)
+AttributeError: 'NoneType' object has no attribute 'get'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/crate/client/http.py", line 489, in _request
+    response = self.server_pool[next_server].request(
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/crate/client/http.py", line 154, in request
+    return self.pool.urlopen(
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 654, in urlopen
+    conn = self._get_conn(timeout=pool_timeout)
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 254, in _get_conn
+    raise ClosedPoolError(self, "Pool is closed.")
+urllib3.exceptions.ClosedPoolError: HTTPConnectionPool(host='129.128.159.94', port=4200): Pool is closed.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 1819, in _execute_context
+    self.dialect.do_execute(
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/sqlalchemy/engine/default.py", line 732, in do_execute
+    cursor.execute(statement, parameters)
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/crate/client/cursor.py", line 50, in execute
+    self._result = self.connection.client.sql(sql, parameters,
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/crate/client/http.py", line 412, in sql
+    content = self._json_request('POST', self.path, data=data)
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/crate/client/http.py", line 538, in _json_request
+    response = self._request(method, path, data=data)
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/crate/client/http.py", line 529, in _request
+    self._drop_server(next_server, ex_message)
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/crate/client/http.py", line 606, in _drop_server
+    raise ConnectionError(
+crate.client.exceptions.ConnectionError: No more Servers available, exception from last server: HTTPConnectionPool(host='129.128.159.94', port=4200): Pool is closed.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/streamlit/scriptrunner/script_runner.py", line 554, in _run_script
+    exec(code, module.__dict__)
+  File "dashboard.py", line 16, in <module>
+    username = st.selectbox('User', get_users())
+  File "/home/virtualgym/Desktop/VirtualGymDashboard/queries.py", line 50, in get_users
+    return pd.read_sql(query, con=db_connection)['UserName'].tolist()
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/pandas/io/sql.py", line 592, in read_sql
+    return pandas_sql.read_query(
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/pandas/io/sql.py", line 1557, in read_query
+    result = self.execute(*args)
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/pandas/io/sql.py", line 1402, in execute
+    return self.connectable.execution_options().execute(*args, **kwargs)
+  File "<string>", line 2, in execute
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/sqlalchemy/util/deprecations.py", line 401, in warned
+    return fn(*args, **kwargs)
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 3176, in execute
+    return connection.execute(statement, *multiparams, **params)
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 1291, in execute
+    return self._exec_driver_sql(
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 1595, in _exec_driver_sql
+    ret = self._execute_context(
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 1862, in _execute_context
+    self._handle_dbapi_exception(
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 2043, in _handle_dbapi_exception
+    util.raise_(
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/sqlalchemy/util/compat.py", line 208, in raise_
+    raise exception
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 1819, in _execute_context
+    self.dialect.do_execute(
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/sqlalchemy/engine/default.py", line 732, in do_execute
+    cursor.execute(statement, parameters)
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/crate/client/cursor.py", line 50, in execute
+    self._result = self.connection.client.sql(sql, parameters,
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/crate/client/http.py", line 412, in sql
+    content = self._json_request('POST', self.path, data=data)
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/crate/client/http.py", line 538, in _json_request
+    response = self._request(method, path, data=data)
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/crate/client/http.py", line 529, in _request
+    self._drop_server(next_server, ex_message)
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/crate/client/http.py", line 606, in _drop_server
+    raise ConnectionError(
+sqlalchemy.exc.OperationalError: (crate.client.exceptions.ConnectionError) No more Servers available, exception from last server: HTTPConnectionPool(host='129.128.159.94', port=4200): Pool is closed.
+[SQL: 
+        SELECT DISTINCT "UserName"
+        FROM sessions limit 100;
+    ]
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+
+  You can now view your Streamlit app in your browser.
+
+  Network URL: http://129.128.184.214:8099
+  External URL: http://129.128.184.214:8099
+
+  Stopping...
+  Stopping...
+  Stopping...
+  Stopping...
+2022-07-21 14:31:12.645 Retrying (Retry(total=9, connect=None, read=0, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fe67bb230a0>: Failed to establish a new connection: [Errno 110] Connection timed out')': /
+  Stopping...
+
+  You can now view your Streamlit app in your browser.
+
+  Network URL: http://129.128.184.214:8099
+  External URL: http://129.128.184.214:8099
+
+  Stopping...
+  Stopping...
+  Stopping...
+  Stopping...
+  Stopping...
+  Stopping...
+  Stopping...
+  Stopping...
+  Stopping...
+2022-07-23 10:58:39.749 Retrying (Retry(total=9, connect=None, read=0, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f66a3959040>: Failed to establish a new connection: [Errno 110] Connection timed out')': /
+
+  You can now view your Streamlit app in your browser.
+
+  Network URL: http://129.128.184.214:8099
+  External URL: http://129.128.184.214:8099
+
+  Stopping...
+
+  You can now view your Streamlit app in your browser.
+
+  Network URL: http://129.128.184.214:8099
+  External URL: http://129.128.184.214:8099
+
+2022-07-23 11:06:21.185 Received event for non-watched file: /home/virtualgym/Desktop/VirtualGymDashboard/pages/status.py
+2022-07-23 11:08:27.684 Received event for non-watched file: /home/virtualgym/Desktop/VirtualGymDashboard/dashboard.py
+2022-07-24 12:46:43.214 Uncaught app exception
+Traceback (most recent call last):
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/streamlit/scriptrunner/script_runner.py", line 557, in _run_script
+    exec(code, module.__dict__)
+  File "dashboard.py", line 34, in <module>
+    metric1.metric('Date', get_sessions(username)["Date"][0])
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/streamlit/elements/metric.py", line 112, in metric
+    metric_proto.body = self.parse_value(value)
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/streamlit/elements/metric.py", line 150, in parse_value
+    raise TypeError(
+TypeError: '2022-07-21 20:23:06' is of type <class 'pandas._libs.tslibs.timestamps.Timestamp'>, which is not an accepted type. value only accepts: int, float, str, or None. Please convert the value to an accepted type.
+2022-07-24 12:49:08.773 Uncaught app exception
+Traceback (most recent call last):
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/pandas/core/indexes/base.py", line 3621, in get_loc
+    return self._engine.get_loc(casted_key)
+  File "pandas/_libs/index.pyx", line 136, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/index.pyx", line 163, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 5198, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 5206, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'Time'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/streamlit/scriptrunner/script_runner.py", line 557, in _run_script
+    exec(code, module.__dict__)
+  File "dashboard.py", line 35, in <module>
+    metric2.metric('Time', seconds_to_time(get_sessions(username)["Time"][0]))
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/pandas/core/frame.py", line 3505, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/pandas/core/indexes/base.py", line 3623, in get_loc
+    raise KeyError(key) from err
+KeyError: 'Time'
+2022-07-24 12:49:18.125 Uncaught app exception
+Traceback (most recent call last):
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/pandas/core/indexes/base.py", line 3621, in get_loc
+    return self._engine.get_loc(casted_key)
+  File "pandas/_libs/index.pyx", line 136, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/index.pyx", line 163, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 5198, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 5206, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'Time'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/streamlit/scriptrunner/script_runner.py", line 557, in _run_script
+    exec(code, module.__dict__)
+  File "dashboard.py", line 35, in <module>
+    metric2.metric('Time', seconds_to_time(str(get_sessions(username)["Time"][0])))
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/pandas/core/frame.py", line 3505, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/pandas/core/indexes/base.py", line 3623, in get_loc
+    raise KeyError(key) from err
+KeyError: 'Time'
+2022-07-24 12:50:04.387 Uncaught app exception
+Traceback (most recent call last):
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/streamlit/scriptrunner/script_runner.py", line 557, in _run_script
+    exec(code, module.__dict__)
+  File "dashboard.py", line 35, in <module>
+    metric2.metric('Time', get_sessions(username)["Date"][0].split()[1])
+AttributeError: 'Timestamp' object has no attribute 'split'
+2022-07-24 12:56:20.694 Uncaught app exception
+Traceback (most recent call last):
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/streamlit/scriptrunner/script_runner.py", line 557, in _run_script
+    exec(code, module.__dict__)
+  File "dashboard.py", line 24, in <module>
+    metric4.metric('Last Played', time_ago(str(get_sessions(username).iloc[0]["Date"]).split(' ')[0]))
+  File "/home/virtualgym/Desktop/VirtualGymDashboard/helpers.py", line 20, in time_ago
+    date = datetime.strptime(date, '%Y-%m-%d %H:%M:%S')
+  File "/usr/lib/python3.8/_strptime.py", line 568, in _strptime_datetime
+    tt, fraction, gmtoff_fraction = _strptime(data_string, format)
+  File "/usr/lib/python3.8/_strptime.py", line 349, in _strptime
+    raise ValueError("time data %r does not match format %r" %
+ValueError: time data '2022-07-24' does not match format '%Y-%m-%d %H:%M:%S'
+2022-07-27 17:38:21.712 Uncaught app exception
+Traceback (most recent call last):
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/streamlit/scriptrunner/script_runner.py", line 557, in _run_script
+    exec(code, module.__dict__)
+  File "dashboard.py", line 10, in <module>
+    from plots import *
+  File "/home/virtualgym/Desktop/VirtualGymDashboard/plots.py", line 45, in <module>
+    def plot_hand_replay(session_id: str) -> px.Scatter:
+AttributeError: module 'plotly.express' has no attribute 'Scatter'
+2022-07-27 17:38:58.182 Uncaught app exception
+Traceback (most recent call last):
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/streamlit/scriptrunner/script_runner.py", line 557, in _run_script
+    exec(code, module.__dict__)
+  File "dashboard.py", line 58, in <module>
+    plot_hand_replay(session_id)
+  File "/home/virtualgym/Desktop/VirtualGymDashboard/plots.py", line 75, in plot_hand_replay
+    line_ani = animation.FuncAnimation(fig, func, frames=left_xyz.shape[1], fargs=(left_xyz,line), interval=100, blit=False)
+NameError: name 'animation' is not defined
+/home/virtualgym/.local/lib/python3.8/site-packages/matplotlib/animation.py:887: UserWarning:
+
+Animation was deleted without rendering anything. This is most likely not intended. To prevent deletion, assign the Animation to a variable, e.g. `anim`, that exists until you have outputted the Animation using `plt.show()` or `anim.save()`.
+
+/home/virtualgym/.local/lib/python3.8/site-packages/matplotlib/animation.py:887: UserWarning:
+
+Animation was deleted without rendering anything. This is most likely not intended. To prevent deletion, assign the Animation to a variable, e.g. `anim`, that exists until you have outputted the Animation using `plt.show()` or `anim.save()`.
+
+2022-07-27 17:40:34.285 Uncaught app exception
+Traceback (most recent call last):
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/streamlit/scriptrunner/script_runner.py", line 557, in _run_script
+    exec(code, module.__dict__)
+  File "dashboard.py", line 58, in <module>
+    st.write(plot_hand_replay(session_id))
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/streamlit/elements/write.py", line 199, in write
+    self.dg.pyplot(arg)
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/streamlit/elements/pyplot.py", line 92, in pyplot
+    marshall(
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/streamlit/elements/pyplot.py", line 132, in marshall
+    fig.savefig(image, **kwargs)
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/matplotlib/figure.py", line 3046, in savefig
+    self.canvas.print_figure(fname, **kwargs)
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/matplotlib/backend_bases.py", line 2295, in print_figure
+    self.figure.draw(renderer)
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/matplotlib/artist.py", line 73, in draw_wrapper
+    result = draw(artist, renderer, *args, **kwargs)
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/matplotlib/artist.py", line 50, in draw_wrapper
+    return draw(artist, renderer)
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/matplotlib/figure.py", line 2837, in draw
+    mimage._draw_list_compositing_images(
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/matplotlib/image.py", line 132, in _draw_list_compositing_images
+    a.draw(renderer)
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/matplotlib/artist.py", line 50, in draw_wrapper
+    return draw(artist, renderer)
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/mpl_toolkits/mplot3d/axes3d.py", line 473, in draw
+    super().draw(renderer)
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/matplotlib/artist.py", line 50, in draw_wrapper
+    return draw(artist, renderer)
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/matplotlib/axes/_base.py", line 3091, in draw
+    mimage._draw_list_compositing_images(
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/matplotlib/image.py", line 132, in _draw_list_compositing_images
+    a.draw(renderer)
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/matplotlib/artist.py", line 50, in draw_wrapper
+    return draw(artist, renderer)
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/mpl_toolkits/mplot3d/art3d.py", line 216, in draw
+    xs, ys, zs = proj3d.proj_transform(xs3d, ys3d, zs3d, self.axes.M)
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/mpl_toolkits/mplot3d/proj3d.py", line 148, in proj_transform
+    return _proj_transform_vec(vec, M)
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/mpl_toolkits/mplot3d/proj3d.py", line 110, in _proj_transform_vec
+    vecw = np.dot(M, vec)
+  File "<__array_function__ internals>", line 180, in dot
+TypeError: unsupported operand type(s) for *: 'float' and 'NoneType'
+/home/virtualgym/.local/lib/python3.8/site-packages/matplotlib/animation.py:887: UserWarning:
+
+Animation was deleted without rendering anything. This is most likely not intended. To prevent deletion, assign the Animation to a variable, e.g. `anim`, that exists until you have outputted the Animation using `plt.show()` or `anim.save()`.
+
+2022-07-27 17:44:19.903 Uncaught app exception
+Traceback (most recent call last):
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/streamlit/scriptrunner/script_runner.py", line 557, in _run_script
+    exec(code, module.__dict__)
+  File "dashboard.py", line 58, in <module>
+    st.write(plot_hand_replay(session_id))
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/streamlit/elements/write.py", line 199, in write
+    self.dg.pyplot(arg)
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/streamlit/elements/pyplot.py", line 92, in pyplot
+    marshall(
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/streamlit/elements/pyplot.py", line 132, in marshall
+    fig.savefig(image, **kwargs)
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/matplotlib/figure.py", line 3046, in savefig
+    self.canvas.print_figure(fname, **kwargs)
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/matplotlib/backend_bases.py", line 2295, in print_figure
+    self.figure.draw(renderer)
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/matplotlib/artist.py", line 73, in draw_wrapper
+    result = draw(artist, renderer, *args, **kwargs)
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/matplotlib/artist.py", line 50, in draw_wrapper
+    return draw(artist, renderer)
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/matplotlib/figure.py", line 2837, in draw
+    mimage._draw_list_compositing_images(
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/matplotlib/image.py", line 132, in _draw_list_compositing_images
+    a.draw(renderer)
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/matplotlib/artist.py", line 50, in draw_wrapper
+    return draw(artist, renderer)
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/mpl_toolkits/mplot3d/axes3d.py", line 451, in draw
+    for artist in sorted(collections_and_patches,
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/mpl_toolkits/mplot3d/axes3d.py", line 440, in do_3d_projection
+    return artist.do_3d_projection()
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/matplotlib/_api/deprecation.py", line 389, in wrapper
+    return func(*inner_args, **inner_kwargs)
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/mpl_toolkits/mplot3d/art3d.py", line 600, in do_3d_projection
+    vxs, vys, vzs, vis = proj3d.proj_transform_clip(xs, ys, zs,
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/mpl_toolkits/mplot3d/proj3d.py", line 161, in proj_transform_clip
+    return _proj_transform_vec_clip(vec, M)
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/mpl_toolkits/mplot3d/proj3d.py", line 118, in _proj_transform_vec_clip
+    vecw = np.dot(M, vec)
+  File "<__array_function__ internals>", line 180, in dot
+TypeError: unsupported operand type(s) for *: 'float' and 'NoneType'
+2022-07-27 17:44:59.470 Uncaught app exception
+Traceback (most recent call last):
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/streamlit/scriptrunner/script_runner.py", line 557, in _run_script
+    exec(code, module.__dict__)
+  File "dashboard.py", line 58, in <module>
+    st.pyplot(plot_hand_replay(session_id))
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/streamlit/elements/pyplot.py", line 92, in pyplot
+    marshall(
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/streamlit/elements/pyplot.py", line 132, in marshall
+    fig.savefig(image, **kwargs)
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/matplotlib/figure.py", line 3046, in savefig
+    self.canvas.print_figure(fname, **kwargs)
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/matplotlib/backend_bases.py", line 2295, in print_figure
+    self.figure.draw(renderer)
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/matplotlib/artist.py", line 73, in draw_wrapper
+    result = draw(artist, renderer, *args, **kwargs)
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/matplotlib/artist.py", line 50, in draw_wrapper
+    return draw(artist, renderer)
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/matplotlib/figure.py", line 2837, in draw
+    mimage._draw_list_compositing_images(
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/matplotlib/image.py", line 132, in _draw_list_compositing_images
+    a.draw(renderer)
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/matplotlib/artist.py", line 50, in draw_wrapper
+    return draw(artist, renderer)
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/mpl_toolkits/mplot3d/axes3d.py", line 451, in draw
+    for artist in sorted(collections_and_patches,
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/mpl_toolkits/mplot3d/axes3d.py", line 440, in do_3d_projection
+    return artist.do_3d_projection()
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/matplotlib/_api/deprecation.py", line 389, in wrapper
+    return func(*inner_args, **inner_kwargs)
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/mpl_toolkits/mplot3d/art3d.py", line 600, in do_3d_projection
+    vxs, vys, vzs, vis = proj3d.proj_transform_clip(xs, ys, zs,
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/mpl_toolkits/mplot3d/proj3d.py", line 161, in proj_transform_clip
+    return _proj_transform_vec_clip(vec, M)
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/mpl_toolkits/mplot3d/proj3d.py", line 118, in _proj_transform_vec_clip
+    vecw = np.dot(M, vec)
+  File "<__array_function__ internals>", line 180, in dot
+TypeError: unsupported operand type(s) for *: 'float' and 'NoneType'
+2022-07-27 17:46:42.200 Uncaught app exception
+Traceback (most recent call last):
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/streamlit/scriptrunner/script_runner.py", line 557, in _run_script
+    exec(code, module.__dict__)
+  File "dashboard.py", line 58, in <module>
+    plot_hand_replay(session_id)
+  File "/home/virtualgym/Desktop/VirtualGymDashboard/plots.py", line 68, in plot_hand_replay
+    st.pyplot(fig)
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/streamlit/elements/pyplot.py", line 92, in pyplot
+    marshall(
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/streamlit/elements/pyplot.py", line 132, in marshall
+    fig.savefig(image, **kwargs)
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/matplotlib/figure.py", line 3046, in savefig
+    self.canvas.print_figure(fname, **kwargs)
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/matplotlib/backend_bases.py", line 2295, in print_figure
+    self.figure.draw(renderer)
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/matplotlib/artist.py", line 73, in draw_wrapper
+    result = draw(artist, renderer, *args, **kwargs)
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/matplotlib/artist.py", line 50, in draw_wrapper
+    return draw(artist, renderer)
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/matplotlib/figure.py", line 2837, in draw
+    mimage._draw_list_compositing_images(
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/matplotlib/image.py", line 132, in _draw_list_compositing_images
+    a.draw(renderer)
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/matplotlib/artist.py", line 50, in draw_wrapper
+    return draw(artist, renderer)
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/mpl_toolkits/mplot3d/axes3d.py", line 451, in draw
+    for artist in sorted(collections_and_patches,
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/mpl_toolkits/mplot3d/axes3d.py", line 440, in do_3d_projection
+    return artist.do_3d_projection()
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/matplotlib/_api/deprecation.py", line 389, in wrapper
+    return func(*inner_args, **inner_kwargs)
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/mpl_toolkits/mplot3d/art3d.py", line 600, in do_3d_projection
+    vxs, vys, vzs, vis = proj3d.proj_transform_clip(xs, ys, zs,
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/mpl_toolkits/mplot3d/proj3d.py", line 161, in proj_transform_clip
+    return _proj_transform_vec_clip(vec, M)
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/mpl_toolkits/mplot3d/proj3d.py", line 118, in _proj_transform_vec_clip
+    vecw = np.dot(M, vec)
+  File "<__array_function__ internals>", line 180, in dot
+TypeError: unsupported operand type(s) for *: 'float' and 'NoneType'
+2022-07-27 17:48:00.055 Uncaught app exception
+Traceback (most recent call last):
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/streamlit/scriptrunner/script_runner.py", line 557, in _run_script
+    exec(code, module.__dict__)
+  File "dashboard.py", line 58, in <module>
+    plot_hand_replay(session_id)
+  File "/home/virtualgym/Desktop/VirtualGymDashboard/plots.py", line 68, in plot_hand_replay
+    st.pyplot(fig)
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/streamlit/elements/pyplot.py", line 92, in pyplot
+    marshall(
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/streamlit/elements/pyplot.py", line 132, in marshall
+    fig.savefig(image, **kwargs)
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/matplotlib/figure.py", line 3046, in savefig
+    self.canvas.print_figure(fname, **kwargs)
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/matplotlib/backend_bases.py", line 2295, in print_figure
+    self.figure.draw(renderer)
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/matplotlib/artist.py", line 73, in draw_wrapper
+    result = draw(artist, renderer, *args, **kwargs)
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/matplotlib/artist.py", line 50, in draw_wrapper
+    return draw(artist, renderer)
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/matplotlib/figure.py", line 2837, in draw
+    mimage._draw_list_compositing_images(
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/matplotlib/image.py", line 132, in _draw_list_compositing_images
+    a.draw(renderer)
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/matplotlib/artist.py", line 50, in draw_wrapper
+    return draw(artist, renderer)
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/mpl_toolkits/mplot3d/axes3d.py", line 451, in draw
+    for artist in sorted(collections_and_patches,
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/mpl_toolkits/mplot3d/axes3d.py", line 440, in do_3d_projection
+    return artist.do_3d_projection()
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/matplotlib/_api/deprecation.py", line 389, in wrapper
+    return func(*inner_args, **inner_kwargs)
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/mpl_toolkits/mplot3d/art3d.py", line 600, in do_3d_projection
+    vxs, vys, vzs, vis = proj3d.proj_transform_clip(xs, ys, zs,
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/mpl_toolkits/mplot3d/proj3d.py", line 161, in proj_transform_clip
+    return _proj_transform_vec_clip(vec, M)
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/mpl_toolkits/mplot3d/proj3d.py", line 118, in _proj_transform_vec_clip
+    vecw = np.dot(M, vec)
+  File "<__array_function__ internals>", line 180, in dot
+TypeError: unsupported operand type(s) for *: 'float' and 'NoneType'
+2022-07-27 17:53:59.169 Uncaught app exception
+Traceback (most recent call last):
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/streamlit/scriptrunner/script_runner.py", line 557, in _run_script
+    exec(code, module.__dict__)
+  File "dashboard.py", line 58, in <module>
+    st.plotly_chart(plot_hand_replay(session_id))
+  File "/home/virtualgym/Desktop/VirtualGymDashboard/plots.py", line 54, in plot_hand_replay
+    fig = px.scatter_3d(
+TypeError: scatter_3d() got an unexpected keyword argument 'mode'
+2022-07-27 17:55:22.082 Uncaught app exception
+Traceback (most recent call last):
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/streamlit/scriptrunner/script_runner.py", line 557, in _run_script
+    exec(code, module.__dict__)
+  File "dashboard.py", line 58, in <module>
+    st.plotly_chart(plot_hand_replay(session_id))
+  File "/home/virtualgym/Desktop/VirtualGymDashboard/plots.py", line 54, in plot_hand_replay
+    fig = px.scatter_3d(
+TypeError: scatter_3d() got an unexpected keyword argument 'mode'
+2022-07-27 17:55:34.811 Uncaught app exception
+Traceback (most recent call last):
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/streamlit/scriptrunner/script_runner.py", line 557, in _run_script
+    exec(code, module.__dict__)
+  File "dashboard.py", line 58, in <module>
+    st.plotly_chart(plot_hand_replay(session_id))
+  File "/home/virtualgym/Desktop/VirtualGymDashboard/plots.py", line 54, in plot_hand_replay
+    fig = px.scatter_3d(
+TypeError: scatter_3d() got an unexpected keyword argument 'marker'
+2022-07-27 17:55:41.595 Uncaught app exception
+Traceback (most recent call last):
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/streamlit/scriptrunner/script_runner.py", line 557, in _run_script
+    exec(code, module.__dict__)
+  File "dashboard.py", line 58, in <module>
+    st.plotly_chart(plot_hand_replay(session_id))
+  File "/home/virtualgym/Desktop/VirtualGymDashboard/plots.py", line 54, in plot_hand_replay
+    fig = px.scatter_3d(
+TypeError: scatter_3d() got an unexpected keyword argument 'marker'
+2022-07-27 17:56:01.042 Uncaught app exception
+Traceback (most recent call last):
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/streamlit/scriptrunner/script_runner.py", line 557, in _run_script
+    exec(code, module.__dict__)
+  File "dashboard.py", line 58, in <module>
+    st.plotly_chart(plot_hand_replay(session_id))
+  File "/home/virtualgym/Desktop/VirtualGymDashboard/plots.py", line 54, in plot_hand_replay
+    fig = px.scatter_3d(
+TypeError: scatter_3d() got an unexpected keyword argument 'textposition'
+2022-07-27 17:57:06.705 Uncaught app exception
+Traceback (most recent call last):
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/streamlit/scriptrunner/script_runner.py", line 557, in _run_script
+    exec(code, module.__dict__)
+  File "dashboard.py", line 58, in <module>
+    st.plotly_chart(plot_hand_replay(session_id))
+  File "/home/virtualgym/Desktop/VirtualGymDashboard/plots.py", line 63, in plot_hand_replay
+    hovertext=["x: {0:.2f}".format(x) for x in left_xyz[0]],
+  File "/home/virtualgym/Desktop/VirtualGymDashboard/plots.py", line 63, in <listcomp>
+    hovertext=["x: {0:.2f}".format(x) for x in left_xyz[0]],
+TypeError: unsupported format string passed to NoneType.__format__
+2022-07-27 17:57:54.375 Uncaught app exception
+Traceback (most recent call last):
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/streamlit/scriptrunner/script_runner.py", line 557, in _run_script
+    exec(code, module.__dict__)
+  File "dashboard.py", line 58, in <module>
+    st.plotly_chart(plot_hand_replay(session_id))
+  File "/home/virtualgym/Desktop/VirtualGymDashboard/plots.py", line 54, in plot_hand_replay
+    fig = px.scatter_3d(left_xyz,
+TypeError: scatter_3d() got an unexpected keyword argument 'name'
+2022-07-27 18:06:43.130 Uncaught app exception
+Traceback (most recent call last):
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/streamlit/scriptrunner/script_runner.py", line 557, in _run_script
+    exec(code, module.__dict__)
+  File "dashboard.py", line 58, in <module>
+    st.plotly_chart(plot_hand_replay(session_id))
+  File "/home/virtualgym/Desktop/VirtualGymDashboard/plots.py", line 54, in plot_hand_replay
+    fig = px.scatter_3d(
+TypeError: scatter_3d() got an unexpected keyword argument 'mode'
+2022-07-27 18:07:31.533 Uncaught app exception
+Traceback (most recent call last):
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/streamlit/scriptrunner/script_runner.py", line 557, in _run_script
+    exec(code, module.__dict__)
+  File "dashboard.py", line 58, in <module>
+    st.plotly_chart(plot_hand_replay(session_id))
+  File "/home/virtualgym/Desktop/VirtualGymDashboard/plots.py", line 71, in plot_hand_replay
+    go.Scatter3d(
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/plotly/graph_objs/_scatter3d.py", line 2736, in __init__
+    self._process_kwargs(**dict(arg, **kwargs))
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/plotly/basedatatypes.py", line 4377, in _process_kwargs
+    raise err
+ValueError: Invalid property specified for object of type plotly.graph_objs.Scatter3d: 'color'
+
+Did you mean "mode"?
+
+    Valid properties:
+        connectgaps
+            Determines whether or not gaps (i.e. {nan} or missing
+            values) in the provided data arrays are connected.
+        customdata
+            Assigns extra data each datum. This may be useful when
+            listening to hover, click and selection events. Note
+            that, "scatter" traces also appends customdata items in
+            the markers DOM elements
+        customdatasrc
+            Sets the source reference on Chart Studio Cloud for
+            `customdata`.
+        error_x
+            :class:`plotly.graph_objects.scatter3d.ErrorX` instance
+            or dict with compatible properties
+        error_y
+            :class:`plotly.graph_objects.scatter3d.ErrorY` instance
+            or dict with compatible properties
+        error_z
+            :class:`plotly.graph_objects.scatter3d.ErrorZ` instance
+            or dict with compatible properties
+        hoverinfo
+            Determines which trace information appear on hover. If
+            `none` or `skip` are set, no information is displayed
+            upon hovering. But, if `none` is set, click and hover
+            events are still fired.
+        hoverinfosrc
+            Sets the source reference on Chart Studio Cloud for
+            `hoverinfo`.
+        hoverlabel
+            :class:`plotly.graph_objects.scatter3d.Hoverlabel`
+            instance or dict with compatible properties
+        hovertemplate
+            Template string used for rendering the information that
+            appear on hover box. Note that this will override
+            `hoverinfo`. Variables are inserted using %{variable},
+            for example "y: %{y}" as well as %{xother}, {%_xother},
+            {%_xother_}, {%xother_}. When showing info for several
+            points, "xother" will be added to those with different
+            x positions from the first point. An underscore before
+            or after "(x|y)other" will add a space on that side,
+            only when this field is shown. Numbers are formatted
+            using d3-format's syntax %{variable:d3-format}, for
+            example "Price: %{y:$.2f}".
+            https://github.com/d3/d3-format/tree/v1.4.5#d3-format
+            for details on the formatting syntax. Dates are
+            formatted using d3-time-format's syntax
+            %{variable|d3-time-format}, for example "Day:
+            %{2019-01-01|%A}". https://github.com/d3/d3-time-
+            format/tree/v2.2.3#locale_format for details on the
+            date formatting syntax. The variables available in
+            `hovertemplate` are the ones emitted as event data
+            described at this link
+            https://plotly.com/javascript/plotlyjs-events/#event-
+            data. Additionally, every attributes that can be
+            specified per-point (the ones that are `arrayOk: true`)
+            are available.  Anything contained in tag `<extra>` is
+            displayed in the secondary box, for example
+            "<extra>{fullData.name}</extra>". To hide the secondary
+            box completely, use an empty tag `<extra></extra>`.
+        hovertemplatesrc
+            Sets the source reference on Chart Studio Cloud for
+            `hovertemplate`.
+        hovertext
+            Sets text elements associated with each (x,y,z)
+            triplet. If a single string, the same string appears
+            over all the data points. If an array of string, the
+            items are mapped in order to the this trace's (x,y,z)
+            coordinates. To be seen, trace `hoverinfo` must contain
+            a "text" flag.
+        hovertextsrc
+            Sets the source reference on Chart Studio Cloud for
+            `hovertext`.
+        ids
+            Assigns id labels to each datum. These ids for object
+            constancy of data points during animation. Should be an
+            array of strings, not numbers or any other type.
+        idssrc
+            Sets the source reference on Chart Studio Cloud for
+            `ids`.
+        legendgroup
+            Sets the legend group for this trace. Traces part of
+            the same legend group hide/show at the same time when
+            toggling legend items.
+        legendgrouptitle
+            :class:`plotly.graph_objects.scatter3d.Legendgrouptitle
+            ` instance or dict with compatible properties
+        legendrank
+            Sets the legend rank for this trace. Items and groups
+            with smaller ranks are presented on top/left side while
+            with `*reversed* `legend.traceorder` they are on
+            bottom/right side. The default legendrank is 1000, so
+            that you can use ranks less than 1000 to place certain
+            items before all unranked items, and ranks greater than
+            1000 to go after all unranked items.
+        line
+            :class:`plotly.graph_objects.scatter3d.Line` instance
+            or dict with compatible properties
+        marker
+            :class:`plotly.graph_objects.scatter3d.Marker` instance
+            or dict with compatible properties
+        meta
+            Assigns extra meta information associated with this
+            trace that can be used in various text attributes.
+            Attributes such as trace `name`, graph, axis and
+            colorbar `title.text`, annotation `text`
+            `rangeselector`, `updatemenues` and `sliders` `label`
+            text all support `meta`. To access the trace `meta`
+            values in an attribute in the same trace, simply use
+            `%{meta[i]}` where `i` is the index or key of the
+            `meta` item in question. To access trace `meta` in
+            layout attributes, use `%{data[n[.meta[i]}` where `i`
+            is the index or key of the `meta` and `n` is the trace
+            index.
+        metasrc
+            Sets the source reference on Chart Studio Cloud for
+            `meta`.
+        mode
+            Determines the drawing mode for this scatter trace. If
+            the provided `mode` includes "text" then the `text`
+            elements appear at the coordinates. Otherwise, the
+            `text` elements appear on hover. If there are less than
+            20 points and the trace is not stacked then the default
+            is "lines+markers". Otherwise, "lines".
+        name
+            Sets the trace name. The trace name appear as the
+            legend item and on hover.
+        opacity
+            Sets the opacity of the trace.
+        projection
+            :class:`plotly.graph_objects.scatter3d.Projection`
+            instance or dict with compatible properties
+        scene
+            Sets a reference between this trace's 3D coordinate
+            system and a 3D scene. If "scene" (the default value),
+            the (x,y,z) coordinates refer to `layout.scene`. If
+            "scene2", the (x,y,z) coordinates refer to
+            `layout.scene2`, and so on.
+        showlegend
+            Determines whether or not an item corresponding to this
+            trace is shown in the legend.
+        stream
+            :class:`plotly.graph_objects.scatter3d.Stream` instance
+            or dict with compatible properties
+        surfaceaxis
+            If "-1", the scatter points are not fill with a surface
+            If 0, 1, 2, the scatter points are filled with a
+            Delaunay surface about the x, y, z respectively.
+        surfacecolor
+            Sets the surface fill color.
+        text
+            Sets text elements associated with each (x,y,z)
+            triplet. If a single string, the same string appears
+            over all the data points. If an array of string, the
+            items are mapped in order to the this trace's (x,y,z)
+            coordinates. If trace `hoverinfo` contains a "text"
+            flag and "hovertext" is not set, these elements will be
+            seen in the hover labels.
+        textfont
+            :class:`plotly.graph_objects.scatter3d.Textfont`
+            instance or dict with compatible properties
+        textposition
+            Sets the positions of the `text` elements with respects
+            to the (x,y) coordinates.
+        textpositionsrc
+            Sets the source reference on Chart Studio Cloud for
+            `textposition`.
+        textsrc
+            Sets the source reference on Chart Studio Cloud for
+            `text`.
+        texttemplate
+            Template string used for rendering the information text
+            that appear on points. Note that this will override
+            `textinfo`. Variables are inserted using %{variable},
+            for example "y: %{y}". Numbers are formatted using
+            d3-format's syntax %{variable:d3-format}, for example
+            "Price: %{y:$.2f}".
+            https://github.com/d3/d3-format/tree/v1.4.5#d3-format
+            for details on the formatting syntax. Dates are
+            formatted using d3-time-format's syntax
+            %{variable|d3-time-format}, for example "Day:
+            %{2019-01-01|%A}". https://github.com/d3/d3-time-
+            format/tree/v2.2.3#locale_format for details on the
+            date formatting syntax. Every attributes that can be
+            specified per-point (the ones that are `arrayOk: true`)
+            are available.
+        texttemplatesrc
+            Sets the source reference on Chart Studio Cloud for
+            `texttemplate`.
+        uid
+            Assign an id to this trace, Use this to provide object
+            constancy between traces during animations and
+            transitions.
+        uirevision
+            Controls persistence of some user-driven changes to the
+            trace: `constraintrange` in `parcoords` traces, as well
+            as some `editable: true` modifications such as `name`
+            and `colorbar.title`. Defaults to `layout.uirevision`.
+            Note that other user-driven trace attribute changes are
+            controlled by `layout` attributes: `trace.visible` is
+            controlled by `layout.legend.uirevision`,
+            `selectedpoints` is controlled by
+            `layout.selectionrevision`, and `colorbar.(x|y)`
+            (accessible with `config: {editable: true}`) is
+            controlled by `layout.editrevision`. Trace changes are
+            tracked by `uid`, which only falls back on trace index
+            if no `uid` is provided. So if your app can add/remove
+            traces before the end of the `data` array, such that
+            the same trace has a different index, you can still
+            preserve user-driven changes if you give each trace a
+            `uid` that stays with it as it moves.
+        visible
+            Determines whether or not this trace is visible. If
+            "legendonly", the trace is not drawn, but can appear as
+            a legend item (provided that the legend itself is
+            visible).
+        x
+            Sets the x coordinates.
+        xcalendar
+            Sets the calendar system to use with `x` date data.
+        xhoverformat
+            Sets the hover text formatting rulefor `x`  using d3
+            formatting mini-languages which are very similar to
+            those in Python. For numbers, see:
+            https://github.com/d3/d3-format/tree/v1.4.5#d3-format.
+            And for dates see: https://github.com/d3/d3-time-
+            format/tree/v2.2.3#locale_format. We add two items to
+            d3's date formatter: "%h" for half of the year as a
+            decimal number as well as "%{n}f" for fractional
+            seconds with n digits. For example, *2016-10-13
+            09:15:23.456* with tickformat "%H~%M~%S.%2f" would
+            display *09~15~23.46*By default the values are
+            formatted using `xaxis.hoverformat`.
+        xsrc
+            Sets the source reference on Chart Studio Cloud for
+            `x`.
+        y
+            Sets the y coordinates.
+        ycalendar
+            Sets the calendar system to use with `y` date data.
+        yhoverformat
+            Sets the hover text formatting rulefor `y`  using d3
+            formatting mini-languages which are very similar to
+            those in Python. For numbers, see:
+            https://github.com/d3/d3-format/tree/v1.4.5#d3-format.
+            And for dates see: https://github.com/d3/d3-time-
+            format/tree/v2.2.3#locale_format. We add two items to
+            d3's date formatter: "%h" for half of the year as a
+            decimal number as well as "%{n}f" for fractional
+            seconds with n digits. For example, *2016-10-13
+            09:15:23.456* with tickformat "%H~%M~%S.%2f" would
+            display *09~15~23.46*By default the values are
+            formatted using `yaxis.hoverformat`.
+        ysrc
+            Sets the source reference on Chart Studio Cloud for
+            `y`.
+        z
+            Sets the z coordinates.
+        zcalendar
+            Sets the calendar system to use with `z` date data.
+        zhoverformat
+            Sets the hover text formatting rulefor `z`  using d3
+            formatting mini-languages which are very similar to
+            those in Python. For numbers, see:
+            https://github.com/d3/d3-format/tree/v1.4.5#d3-format.
+            And for dates see: https://github.com/d3/d3-time-
+            format/tree/v2.2.3#locale_format. We add two items to
+            d3's date formatter: "%h" for half of the year as a
+            decimal number as well as "%{n}f" for fractional
+            seconds with n digits. For example, *2016-10-13
+            09:15:23.456* with tickformat "%H~%M~%S.%2f" would
+            display *09~15~23.46*By default the values are
+            formatted using `zaxis.hoverformat`.
+        zsrc
+            Sets the source reference on Chart Studio Cloud for
+            `z`.
+        
+Did you mean "mode"?
+
+Bad property path:
+color
+^^^^^
+2022-07-27 18:08:25.416 Uncaught app exception
+Traceback (most recent call last):
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/streamlit/scriptrunner/script_runner.py", line 557, in _run_script
+    exec(code, module.__dict__)
+  File "dashboard.py", line 58, in <module>
+    st.plotly_chart(plot_hand_replay(session_id))
+  File "/home/virtualgym/Desktop/VirtualGymDashboard/plots.py", line 71, in plot_hand_replay
+    go.Scatter3d(
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/plotly/graph_objs/_scatter3d.py", line 2594, in __init__
+    self["marker"] = _v
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/plotly/basedatatypes.py", line 4851, in __setitem__
+    self._set_compound_prop(prop, value)
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/plotly/basedatatypes.py", line 5262, in _set_compound_prop
+    val = validator.validate_coerce(val, skip_invalid=self._skip_invalid)
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/_plotly_utils/basevalidators.py", line 2460, in validate_coerce
+    v = self.data_class(v, skip_invalid=skip_invalid, _validate=_validate)
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/plotly/graph_objs/scatter3d/_marker.py", line 1293, in __init__
+    self["symbol"] = _v
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/plotly/basedatatypes.py", line 4859, in __setitem__
+    self._set_prop(prop, value)
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/plotly/basedatatypes.py", line 5203, in _set_prop
+    raise err
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/plotly/basedatatypes.py", line 5198, in _set_prop
+    val = validator.validate_coerce(val)
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/_plotly_utils/basevalidators.py", line 611, in validate_coerce
+    self.raise_invalid_val(v)
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/_plotly_utils/basevalidators.py", line 288, in raise_invalid_val
+    raise ValueError(
+ValueError: 
+    Invalid value of type 'builtins.str' received for the 'symbol' property of scatter3d.marker
+        Received value: 'arrow'
+
+    The 'symbol' property is an enumeration that may be specified as:
+      - One of the following enumeration values:
+            ['circle', 'circle-open', 'cross', 'diamond',
+            'diamond-open', 'square', 'square-open', 'x']
+      - A tuple, list, or one-dimensional numpy array of the above
+2022-07-27 18:08:27.809 Uncaught app exception
+Traceback (most recent call last):
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/streamlit/scriptrunner/script_runner.py", line 557, in _run_script
+    exec(code, module.__dict__)
+  File "dashboard.py", line 58, in <module>
+    st.plotly_chart(plot_hand_replay(session_id))
+  File "/home/virtualgym/Desktop/VirtualGymDashboard/plots.py", line 71, in plot_hand_replay
+    go.Scatter3d(
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/plotly/graph_objs/_scatter3d.py", line 2594, in __init__
+    self["marker"] = _v
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/plotly/basedatatypes.py", line 4851, in __setitem__
+    self._set_compound_prop(prop, value)
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/plotly/basedatatypes.py", line 5262, in _set_compound_prop
+    val = validator.validate_coerce(val, skip_invalid=self._skip_invalid)
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/_plotly_utils/basevalidators.py", line 2460, in validate_coerce
+    v = self.data_class(v, skip_invalid=skip_invalid, _validate=_validate)
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/plotly/graph_objs/scatter3d/_marker.py", line 1293, in __init__
+    self["symbol"] = _v
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/plotly/basedatatypes.py", line 4859, in __setitem__
+    self._set_prop(prop, value)
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/plotly/basedatatypes.py", line 5203, in _set_prop
+    raise err
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/plotly/basedatatypes.py", line 5198, in _set_prop
+    val = validator.validate_coerce(val)
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/_plotly_utils/basevalidators.py", line 611, in validate_coerce
+    self.raise_invalid_val(v)
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/_plotly_utils/basevalidators.py", line 288, in raise_invalid_val
+    raise ValueError(
+ValueError: 
+    Invalid value of type 'builtins.str' received for the 'symbol' property of scatter3d.marker
+        Received value: 'arrow'
+
+    The 'symbol' property is an enumeration that may be specified as:
+      - One of the following enumeration values:
+            ['circle', 'circle-open', 'cross', 'diamond',
+            'diamond-open', 'square', 'square-open', 'x']
+      - A tuple, list, or one-dimensional numpy array of the above
+2022-07-27 18:16:41.285 Uncaught app exception
+Traceback (most recent call last):
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/streamlit/legacy_caching/hashing.py", line 368, in to_bytes
+    b = b"%s:%s" % (tname, self._to_bytes(obj, context))
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/streamlit/legacy_caching/hashing.py", line 634, in _to_bytes
+    if self._file_should_be_hashed(code.co_filename):
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/streamlit/legacy_caching/hashing.py", line 410, in _file_should_be_hashed
+    filepath, self._get_main_script_directory()
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/streamlit/legacy_caching/hashing.py", line 716, in _get_main_script_directory
+    import __main__
+ModuleNotFoundError: No module named '__main__'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/streamlit/scriptrunner/script_runner.py", line 557, in _run_script
+    exec(code, module.__dict__)
+  File "dashboard.py", line 23, in <module>
+    metric3.metric('Time Played', seconds_to_time(time_played(username)))
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/streamlit/legacy_caching/caching.py", line 573, in wrapped_func
+    return get_or_create_cached_value()
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/streamlit/legacy_caching/caching.py", line 498, in get_or_create_cached_value
+    cache_key = _hash_func(func, hash_funcs)
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/streamlit/legacy_caching/caching.py", line 624, in _hash_func
+    update_hash(
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/streamlit/legacy_caching/hashing.py", line 116, in update_hash
+    ch.update(hasher, val, context)
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/streamlit/legacy_caching/hashing.py", line 393, in update
+    b = self.to_bytes(obj, context)
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/streamlit/legacy_caching/hashing.py", line 382, in to_bytes
+    raise InternalHashError(e, obj)
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/streamlit/legacy_caching/hashing.py", line 368, in to_bytes
+    b = b"%s:%s" % (tname, self._to_bytes(obj, context))
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/streamlit/legacy_caching/hashing.py", line 634, in _to_bytes
+    if self._file_should_be_hashed(code.co_filename):
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/streamlit/legacy_caching/hashing.py", line 410, in _file_should_be_hashed
+    filepath, self._get_main_script_directory()
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/streamlit/legacy_caching/hashing.py", line 716, in _get_main_script_directory
+    import __main__
+streamlit.legacy_caching.hashing.InternalHashError: No module named '__main__'
+
+While caching the body of `time_played()`, Streamlit encountered an
+object of type `builtins.function`, which it does not know how to hash.
+
+**In this specific case, it's very likely you found a Streamlit bug so please
+[file a bug report here.]
+(https://github.com/streamlit/streamlit/issues/new/choose)**
+
+In the meantime, you can try bypassing this error by registering a custom
+hash function via the `hash_funcs` keyword in @st.cache(). For example:
+
+```
+@st.cache(hash_funcs={builtins.function: my_hash_func})
+def my_func(...):
+    ...
+```
+
+If you don't know where the object of type `builtins.function` is coming
+from, try looking at the hash chain below for an object that you do recognize,
+then pass that to `hash_funcs` instead:
+
+```
+Object of type builtins.function: <function time_played at 0x7fa7cbb29940>
+```
+
+Please see the `hash_funcs` [documentation]
+(https://docs.streamlit.io/library/advanced-features/caching#the-hash_funcs-parameter)
+for more details.
+            
+2022-07-27 18:17:04.859 Uncaught app exception
+Traceback (most recent call last):
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/streamlit/scriptrunner/script_runner.py", line 557, in _run_script
+    exec(code, module.__dict__)
+  File "dashboard.py", line 58, in <module>
+    st.plotly_chart(plot_hand_replay(session_id))
+  File "/home/virtualgym/Desktop/VirtualGymDashboard/plots.py", line 54, in plot_hand_replay
+    fig = px.scatter_3d(
+TypeError: scatter_3d() got an unexpected keyword argument 'name'
+2022-07-27 18:17:45.148 Uncaught app exception
+Traceback (most recent call last):
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/streamlit/scriptrunner/script_runner.py", line 557, in _run_script
+    exec(code, module.__dict__)
+  File "dashboard.py", line 58, in <module>
+    st.plotly_chart(plot_hand_replay(session_id))
+  File "/home/virtualgym/Desktop/VirtualGymDashboard/plots.py", line 61, in plot_hand_replay
+    fig.add_trace(
+AttributeError: 'Scatter3d' object has no attribute 'add_trace'

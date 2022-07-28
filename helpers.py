@@ -12,18 +12,24 @@ def seconds_to_time(seconds: int) -> str:
 def time_ago(date: str) -> str:
     """
     Returns a string of how long ago a date was.
+    Ex: 30 minutes ago
+    Ex: 5 hours ago
     Ex: 1 day ago
     Ex: 3 weeks ago
     """
     now = datetime.now()
     then = datetime.strptime(date, '%Y-%m-%d')
     delta = now - then
-    if delta.days == 0:
-        return "{} ago".format(delta.seconds // 3600)
-    elif delta.days == 1:
-        return "1 day ago"
-    elif delta.days > 1:
+    if delta.days > 0:
         return "{} days ago".format(delta.days)
+    elif delta.seconds > 3600:
+        return "{} hours ago".format(delta.seconds // 3600)
+    elif delta.seconds > 60:
+        return "{} minutes ago".format(delta.seconds // 60)
+    else:
+        return "{} seconds ago".format(delta.seconds)
+    
+    
 
 def max_reach(df_right, df_left: pd.DataFrame) -> dict:
     left_max_y = df_left[1].max()

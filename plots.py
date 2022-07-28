@@ -2,6 +2,7 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
+import matplotlib.animation as animation
 from mpl_toolkits.mplot3d import Axes3D
 import plotly.express as px
 import plotly.graph_objects as go
@@ -9,7 +10,7 @@ from plotly_calplot import calplot
 from queries import *
 
 @st.cache
-def plot_scatter(df: pd.DataFrame, labels: list[str]) -> px.scatter_3d:
+def plot_scatter(df, labels):
     # in unity, z is up and y is forward so we need to flip the z and y
     fig = px.scatter_3d(df,
         x=labels[0],
@@ -41,3 +42,61 @@ def plot_calendar(username: str) -> calplot:
     )
     fig.update_layout(paper_bgcolor="#13161C", plot_bgcolor="#252A33")
     return fig
+
+def plot_hand_replay(session_id: str):
+    # display a 3d plot of the hand replay of a session
+    # animation function
+    data_left, data_right = get_relative_hand_pos(session_id)
+    left_xyz = data_left[['x', 'z', 'y']].to_numpy().transpose()
+    right_xyz = data_right[['x', 'z', 'y']].to_numpy().transpose()
+
+    # return a simple scatter plot of left_xyz and right_xyz with a 3d axis using plotly
+    fig = px.scatter_3d()
+
+    fig.add_trace(
+        go.Scatter3d(
+            x=left_xyz[0],
+            y=left_xyz[1],
+            z=left_xyz[2],
+            opacity=0.3,
+            mode='markers',
+            name='left hand positions'
+        )
+    )
+    fig.add_trace(
+        go.Scatter3d(
+            x=right_xyz[0],
+            y=right_xyz[1],
+            z=right_xyz[2],
+            opacity=0.3,
+            mode='markers',
+            name="right hand positions"
+        )
+    )
+    # add a red line from 0,0,0 to 0,1,0
+    fig.add_trace(
+        go.Scatter3d(
+            x=[0, 0],
+            y=[0, 1],
+            z=[0, 0],
+            mode='lines',
+            line=dict(color='yellow', width=4),
+            name="forward facing"
+
+        )
+    )
+    fig.add_trace(
+        go.Scatter3d(
+            x=[0, 0],
+            y=[0, 0],
+            z=[0, -1],
+            mode='lines',
+            line=dict(color='purple', width=4),
+            name="body position"
+
+        )
+    )
+    fig.update_layout(paper_bgcolor="#13161C", plot_bgcolor="#252A33")
+    return fig
+
+        

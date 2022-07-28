@@ -28,6 +28,13 @@ st.write(plot_calendar(username))
 # make a dropdown menu to select a session
 session_id = st.selectbox('Session', get_sessions(username)["SessionId"].tolist())
 
+# display some metrics about the session
+# create 3 columns
+metric1, metric2, metric3 = st.columns(3)
+metric1.metric('Date', str(get_sessions(username)["Date"][0]).split()[0])
+metric2.metric('Length', seconds_to_time(length_of_session(username, session_id)))
+metric3.metric('Game', get_sessions(username)["Game"][0])
+
 # make a button to load the session data
 session_df = None
 col1, col2 = st.columns([1, 3])
@@ -42,25 +49,23 @@ if loading_button:
     session_df = get_session_data(session_id)
     loading_text.text('Session data loaded!')
 
-
-with st.expander("See data"):
-    st.write(session_df)
-
 if session_df is not None:
+    with st.expander("See raw data"):
+        st.write(session_df)
     # make a plot of the session data
-    df_right_xyz = session_df[
-        ['CenterEyeAnchor_posx', 'CenterEyeAnchor_posz', 'CenterEyeAnchor_posy']
-    ]
-    st.plotly_chart(plot_scatter(df_right_xyz, ['CenterEyeAnchor_posx', 'CenterEyeAnchor_posz', 'CenterEyeAnchor_posy']))
+    st.subheader('Range Of Motion Plot')
+    st.plotly_chart(plot_hand_replay(session_id))
 
-st.subheader("Max reach (cm)")
-reach_left, reach_right, reach_up, reach_down, reach_forward = st.columns(5)
-reach_left.metric("Left", 134, 5)
-reach_right.metric("Right", 129, -5)
-reach_up.metric("Up", 122, 13)
-reach_down.metric("Down", 70, 3)
-reach_forward.metric("Forward", 104, 11)
+    reach = get_max_reach(session_id)
+    st.subheader("Max reach (cm)")
+    reach_left, reach_right, reach_up, reach_down, reach_forward = st.columns(5)
+    reach_left.metric("Left from center", round(reach["left"]*100, 1))
+    reach_right.metric("Right from center", round(reach["right"]*100, 1))
+    reach_up.metric("Up (from ground)", round(reach["upward"]*100, 1))
+    reach_down.metric("Down (above ground)", round(reach["downward"]*100, 1))
+    reach_forward.metric("Forward from center", round(reach["forward"]*100, 1))
+    st.write("*Note: These metrics are unreliable if the controllers were ever dropped. We need to remove outliers to improve this metric.")
 
-
+    st.info("More metrics to be added here soon...")
 
 
