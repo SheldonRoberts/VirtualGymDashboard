@@ -74,7 +74,20 @@ def get_sessions(user: str) -> list:
     df = df.sort_values('Date', ascending=False)
     return df
 
-@st.cache
+def get_session(session_id: str) -> pd.DataFrame:
+    """
+    Returns a dataframe of a session
+    """
+    query = """
+        SELECT *
+        FROM sessions
+        WHERE "SessionId" = '{}'
+        LIMIT 1;
+    """.format(session_id)
+    df = pd.read_sql(query, con=db_connection)
+    df['Date'] = pd.to_datetime(df['Date'].map(lambda x: x.replace('.', ':')))
+    return df
+
 def get_session_data(session_id: str) -> pd.DataFrame:
     """
     Returns a dataframe of session data for a session
@@ -129,7 +142,7 @@ def get_max_reach(session_id: str) -> dict:
     right_max_z = right_xyz[2].max()
     right_min_z = right_xyz[2].min()
 
-    z_offset = 1.3
+    z_offset = 1.65
     return {
         "left": abs(left_min_x),
         "right": abs(right_max_x),
@@ -137,3 +150,16 @@ def get_max_reach(session_id: str) -> dict:
         "upward": abs(max(left_max_z+z_offset, right_max_z+z_offset)),
         "downward": abs(min(left_min_z+z_offset, right_min_z+z_offset))
     }
+
+def get_velocity(session_id: str) -> pd.DataFrame:
+    """
+    Returns a dataframe of velocity for a session
+    """
+    query = """
+        SELECT "time", "LeftControllerAnchor_velx" AS "LeftX", "LeftControllerAnchor_vely" AS "LeftY", "LeftControllerAnchor_velz" AS "LeftZ", "RightControllerAnchor_velx" AS "RightX", "RightControllerAnchor_vely" AS "RightY", "RightControllerAnchor_velz" AS "RightZ", "LeftControllerAnchor_vel" as "Left", "RightControllerAnchor_vel" as "Right"
+        FROM frames
+        WHERE "SessionId" = '{}'
+        ORDER BY "time"
+        LIMIT 10000;
+    """.format(session_id)
+    return pd.read_sql(query, db_connection)

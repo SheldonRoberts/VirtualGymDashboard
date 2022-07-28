@@ -1071,3 +1071,910 @@ Traceback (most recent call last):
   File "/home/virtualgym/Desktop/VirtualGymDashboard/plots.py", line 61, in plot_hand_replay
     fig.add_trace(
 AttributeError: 'Scatter3d' object has no attribute 'add_trace'
+2022-07-27 19:05:53.171 Uncaught app exception
+Traceback (most recent call last):
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/streamlit/scriptrunner/script_runner.py", line 557, in _run_script
+    exec(code, module.__dict__)
+  File "dashboard.py", line 59, in <module>
+    reach = get_max_reach(session_id)
+  File "/home/virtualgym/Desktop/VirtualGymDashboard/queries.py", line 123, in get_max_reach
+    left_max_y = left_xyz[1].max()
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/numpy/core/_methods.py", line 40, in _amax
+    return umr_maximum(a, axis, None, out, keepdims, initial, where)
+TypeError: '>=' not supported between instances of 'NoneType' and 'NoneType'
+2022-07-28 09:16:49.790 Uncaught app exception
+Traceback (most recent call last):
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/streamlit/scriptrunner/script_runner.py", line 557, in _run_script
+    exec(code, module.__dict__)
+  File "dashboard.py", line 70, in <module>
+    st.plotly_chart(plot_velocity(session_id))
+NameError: name 'plot_velocity' is not defined
+2022-07-28 09:17:02.733 Uncaught app exception
+Traceback (most recent call last):
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/streamlit/scriptrunner/script_runner.py", line 557, in _run_script
+    exec(code, module.__dict__)
+  File "dashboard.py", line 70, in <module>
+    st.plotly_chart(plot_velocity_time(session_id))
+  File "/home/virtualgym/Desktop/VirtualGymDashboard/plots.py", line 105, in plot_velocity_time
+    fig = px.line(data["Left"], x="time", y="velocity", color="hand")
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/plotly/express/_chart_types.py", line 264, in line
+    return make_figure(args=locals(), constructor=go.Scatter)
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/plotly/express/_core.py", line 1948, in make_figure
+    args = build_dataframe(args, constructor)
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/plotly/express/_core.py", line 1405, in build_dataframe
+    df_output, wide_id_vars = process_args_into_dataframe(
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/plotly/express/_core.py", line 1207, in process_args_into_dataframe
+    raise ValueError(err_msg)
+ValueError: Value of 'x' is not the name of a column in 'data_frame'. Expected one of ['Left'] but received: time
+2022-07-28 09:17:31.722 Uncaught app exception
+Traceback (most recent call last):
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/streamlit/scriptrunner/script_runner.py", line 557, in _run_script
+    exec(code, module.__dict__)
+  File "dashboard.py", line 70, in <module>
+    st.plotly_chart(plot_velocity_time(session_id))
+  File "/home/virtualgym/Desktop/VirtualGymDashboard/plots.py", line 105, in plot_velocity_time
+    fig = px.line(data, x="time", y="Left", color="hand")
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/plotly/express/_chart_types.py", line 264, in line
+    return make_figure(args=locals(), constructor=go.Scatter)
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/plotly/express/_core.py", line 1948, in make_figure
+    args = build_dataframe(args, constructor)
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/plotly/express/_core.py", line 1405, in build_dataframe
+    df_output, wide_id_vars = process_args_into_dataframe(
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/plotly/express/_core.py", line 1207, in process_args_into_dataframe
+    raise ValueError(err_msg)
+ValueError: Value of 'color' is not the name of a column in 'data_frame'. Expected one of ['time', 'LeftX', 'LeftY', 'LeftZ', 'RightX', 'RightY', 'RightZ', 'Left', 'Right'] but received: hand
+2022-07-28 09:18:08.137 Uncaught app exception
+Traceback (most recent call last):
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/streamlit/scriptrunner/script_runner.py", line 557, in _run_script
+    exec(code, module.__dict__)
+  File "dashboard.py", line 70, in <module>
+    st.plotly_chart(plot_velocity_time(session_id))
+  File "/home/virtualgym/Desktop/VirtualGymDashboard/plots.py", line 105, in plot_velocity_time
+    fig = px.line(data, x="time", y="Left", color="red")
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/plotly/express/_chart_types.py", line 264, in line
+    return make_figure(args=locals(), constructor=go.Scatter)
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/plotly/express/_core.py", line 1948, in make_figure
+    args = build_dataframe(args, constructor)
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/plotly/express/_core.py", line 1405, in build_dataframe
+    df_output, wide_id_vars = process_args_into_dataframe(
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/plotly/express/_core.py", line 1207, in process_args_into_dataframe
+    raise ValueError(err_msg)
+ValueError: Value of 'color' is not the name of a column in 'data_frame'. Expected one of ['time', 'LeftX', 'LeftY', 'LeftZ', 'RightX', 'RightY', 'RightZ', 'Left', 'Right'] but received: red
+2022-07-28 09:22:57.806 Uncaught app exception
+Traceback (most recent call last):
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/streamlit/scriptrunner/script_runner.py", line 557, in _run_script
+    exec(code, module.__dict__)
+  File "dashboard.py", line 73, in <module>
+    leftmax.metric("Left", round(get_max_velocity(session_id, "left")*100, 1))
+NameError: name 'get_max_velocity' is not defined
+2022-07-28 09:23:24.279 Uncaught app exception
+Traceback (most recent call last):
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/streamlit/scriptrunner/script_runner.py", line 557, in _run_script
+    exec(code, module.__dict__)
+  File "dashboard.py", line 73, in <module>
+    leftmax.metric("Left", round(get_max_velocity(session_id, "left")*100, 1))
+TypeError: get_max_velocity() takes 1 positional argument but 2 were given
+2022-07-28 09:24:32.139 Uncaught app exception
+Traceback (most recent call last):
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/streamlit/scriptrunner/script_runner.py", line 557, in _run_script
+    exec(code, module.__dict__)
+  File "dashboard.py", line 73, in <module>
+    leftmax.metric("Left", round(get_max_velocity(session_id, "Left")*100, 1))
+  File "/home/virtualgym/Desktop/VirtualGymDashboard/helpers.py", line 37, in get_max_velocity
+    return data[column].nlargest(20).mean()
+TypeError: string indices must be integers
+2022-07-28 09:32:57.681 Uncaught app exception
+Traceback (most recent call last):
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/streamlit/scriptrunner/script_runner.py", line 557, in _run_script
+    exec(code, module.__dict__)
+  File "dashboard.py", line 76, in <module>
+    option = st.selectbox("Select a velocity to graph", columns, on_change=replot)
+NameError: name 'replot' is not defined
+2022-07-28 09:40:46.658 Uncaught app exception
+Traceback (most recent call last):
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/streamlit/scriptrunner/script_runner.py", line 557, in _run_script
+    exec(code, module.__dict__)
+  File "dashboard.py", line 65, in <module>
+    reach = get_max_reach(session_id)
+  File "/home/virtualgym/Desktop/VirtualGymDashboard/queries.py", line 123, in get_max_reach
+    left_max_y = left_xyz[1].max()
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/numpy/core/_methods.py", line 40, in _amax
+    return umr_maximum(a, axis, None, out, keepdims, initial, where)
+TypeError: '>=' not supported between instances of 'NoneType' and 'NoneType'
+2022-07-28 09:41:16.518 Uncaught app exception
+Traceback (most recent call last):
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/streamlit/scriptrunner/script_runner.py", line 557, in _run_script
+    exec(code, module.__dict__)
+  File "dashboard.py", line 60, in <module>
+    reach = get_max_reach(session_id)
+  File "/home/virtualgym/Desktop/VirtualGymDashboard/queries.py", line 123, in get_max_reach
+    left_max_y = left_xyz[1].max()
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/numpy/core/_methods.py", line 40, in _amax
+    return umr_maximum(a, axis, None, out, keepdims, initial, where)
+TypeError: '>=' not supported between instances of 'NoneType' and 'NoneType'
+2022-07-28 09:41:29.386 Uncaught app exception
+Traceback (most recent call last):
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/streamlit/scriptrunner/script_runner.py", line 557, in _run_script
+    exec(code, module.__dict__)
+  File "dashboard.py", line 60, in <module>
+    reach = get_max_reach(session_id)
+  File "/home/virtualgym/Desktop/VirtualGymDashboard/queries.py", line 134, in get_max_reach
+    "left": abs(left_min_x),
+TypeError: bad operand type for abs(): 'NoneType'
+2022-07-28 09:43:45.443 Uncaught app exception
+Traceback (most recent call last):
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/streamlit/scriptrunner/script_runner.py", line 557, in _run_script
+    exec(code, module.__dict__)
+  File "dashboard.py", line 78, in <module>
+    st.plotly_chart(plot_velocity_time(session_id, option, round(get_max_velocity(get_velocity(session_id), option), 2)))
+TypeError: plot_velocity_time() takes 2 positional arguments but 3 were given
+2022-07-28 09:49:37.637 Uncaught app exception
+Traceback (most recent call last):
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/streamlit/scriptrunner/script_runner.py", line 557, in _run_script
+    exec(code, module.__dict__)
+  File "dashboard.py", line 63, in <module>
+    reach = get_max_reach(session_id)
+  File "/home/virtualgym/Desktop/VirtualGymDashboard/queries.py", line 123, in get_max_reach
+    left_max_y = left_xyz[1].max()
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/numpy/core/_methods.py", line 40, in _amax
+    return umr_maximum(a, axis, None, out, keepdims, initial, where)
+TypeError: '>=' not supported between instances of 'NoneType' and 'NoneType'
+2022-07-28 09:54:09.436 Uncaught app exception
+Traceback (most recent call last):
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/streamlit/scriptrunner/script_runner.py", line 557, in _run_script
+    exec(code, module.__dict__)
+  File "dashboard.py", line 65, in <module>
+    reach = get_max_reach(session_id)
+  File "/home/virtualgym/Desktop/VirtualGymDashboard/queries.py", line 123, in get_max_reach
+    left_max_y = left_xyz[1].max()
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/numpy/core/_methods.py", line 40, in _amax
+    return umr_maximum(a, axis, None, out, keepdims, initial, where)
+TypeError: '>=' not supported between instances of 'NoneType' and 'NoneType'
+2022-07-28 09:54:17.369 Uncaught app exception
+Traceback (most recent call last):
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/streamlit/scriptrunner/script_runner.py", line 557, in _run_script
+    exec(code, module.__dict__)
+  File "dashboard.py", line 65, in <module>
+    reach = get_max_reach(session_id)
+  File "/home/virtualgym/Desktop/VirtualGymDashboard/queries.py", line 123, in get_max_reach
+    left_max_y = left_xyz[1].max()
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/numpy/core/_methods.py", line 40, in _amax
+    return umr_maximum(a, axis, None, out, keepdims, initial, where)
+TypeError: '>=' not supported between instances of 'NoneType' and 'NoneType'
+2022-07-28 09:54:21.859 Uncaught app exception
+Traceback (most recent call last):
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/streamlit/scriptrunner/script_runner.py", line 557, in _run_script
+    exec(code, module.__dict__)
+  File "dashboard.py", line 65, in <module>
+    reach = get_max_reach(session_id)
+  File "/home/virtualgym/Desktop/VirtualGymDashboard/queries.py", line 134, in get_max_reach
+    "left": abs(left_min_x),
+TypeError: bad operand type for abs(): 'NoneType'
+2022-07-28 09:54:23.765 Uncaught app exception
+Traceback (most recent call last):
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/streamlit/scriptrunner/script_runner.py", line 557, in _run_script
+    exec(code, module.__dict__)
+  File "dashboard.py", line 65, in <module>
+    reach = get_max_reach(session_id)
+  File "/home/virtualgym/Desktop/VirtualGymDashboard/queries.py", line 134, in get_max_reach
+    "left": abs(left_min_x),
+TypeError: bad operand type for abs(): 'NoneType'
+2022-07-28 09:56:27.370 Uncaught app exception
+Traceback (most recent call last):
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/streamlit/scriptrunner/script_runner.py", line 557, in _run_script
+    exec(code, module.__dict__)
+  File "dashboard.py", line 19, in <module>
+    st.markdown("[Range of Motion](#range-of-motion-plot)", unsafe_allow_html=True, style='color: white')
+TypeError: markdown() got an unexpected keyword argument 'style'
+2022-07-28 09:56:46.534 Uncaught app exception
+Traceback (most recent call last):
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/streamlit/scriptrunner/script_runner.py", line 557, in _run_script
+    exec(code, module.__dict__)
+  File "dashboard.py", line 66, in <module>
+    reach = get_max_reach(session_id)
+  File "/home/virtualgym/Desktop/VirtualGymDashboard/queries.py", line 123, in get_max_reach
+    left_max_y = left_xyz[1].max()
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/numpy/core/_methods.py", line 40, in _amax
+    return umr_maximum(a, axis, None, out, keepdims, initial, where)
+TypeError: '>=' not supported between instances of 'NoneType' and 'NoneType'
+2022-07-28 09:57:15.396 Uncaught app exception
+Traceback (most recent call last):
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/streamlit/scriptrunner/script_runner.py", line 557, in _run_script
+    exec(code, module.__dict__)
+  File "dashboard.py", line 66, in <module>
+    reach = get_max_reach(session_id)
+  File "/home/virtualgym/Desktop/VirtualGymDashboard/queries.py", line 123, in get_max_reach
+    left_max_y = left_xyz[1].max()
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/numpy/core/_methods.py", line 40, in _amax
+    return umr_maximum(a, axis, None, out, keepdims, initial, where)
+TypeError: '>=' not supported between instances of 'NoneType' and 'NoneType'
+2022-07-28 09:57:37.776 Uncaught app exception
+Traceback (most recent call last):
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/streamlit/scriptrunner/script_runner.py", line 557, in _run_script
+    exec(code, module.__dict__)
+  File "dashboard.py", line 66, in <module>
+    reach = get_max_reach(session_id)
+  File "/home/virtualgym/Desktop/VirtualGymDashboard/queries.py", line 123, in get_max_reach
+    left_max_y = left_xyz[1].max()
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/numpy/core/_methods.py", line 40, in _amax
+    return umr_maximum(a, axis, None, out, keepdims, initial, where)
+TypeError: '>=' not supported between instances of 'NoneType' and 'NoneType'
+2022-07-28 09:58:05.258 Uncaught app exception
+Traceback (most recent call last):
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/streamlit/scriptrunner/script_runner.py", line 557, in _run_script
+    exec(code, module.__dict__)
+  File "dashboard.py", line 66, in <module>
+    reach = get_max_reach(session_id)
+  File "/home/virtualgym/Desktop/VirtualGymDashboard/queries.py", line 123, in get_max_reach
+    left_max_y = left_xyz[1].max()
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/numpy/core/_methods.py", line 40, in _amax
+    return umr_maximum(a, axis, None, out, keepdims, initial, where)
+TypeError: '>=' not supported between instances of 'NoneType' and 'NoneType'
+2022-07-28 09:59:49.545 Uncaught app exception
+Traceback (most recent call last):
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/streamlit/scriptrunner/script_runner.py", line 557, in _run_script
+    exec(code, module.__dict__)
+  File "dashboard.py", line 68, in <module>
+    reach = get_max_reach(session_id)
+  File "/home/virtualgym/Desktop/VirtualGymDashboard/queries.py", line 123, in get_max_reach
+    left_max_y = left_xyz[1].max()
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/numpy/core/_methods.py", line 40, in _amax
+    return umr_maximum(a, axis, None, out, keepdims, initial, where)
+TypeError: '>=' not supported between instances of 'NoneType' and 'NoneType'
+2022-07-28 10:19:58.889 Uncaught app exception
+Traceback (most recent call last):
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/streamlit/scriptrunner/script_runner.py", line 557, in _run_script
+    exec(code, module.__dict__)
+  File "dashboard.py", line 8, in <module>
+    from helpers import *
+  File "/home/virtualgym/Desktop/VirtualGymDashboard/helpers.py", line 23
+    if delta.days = 1:
+                  ^
+SyntaxError: invalid syntax
+2022-07-28 10:20:05.574 Uncaught app exception
+Traceback (most recent call last):
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/streamlit/scriptrunner/script_runner.py", line 557, in _run_script
+    exec(code, module.__dict__)
+  File "dashboard.py", line 70, in <module>
+    reach = get_max_reach(session_id)
+  File "/home/virtualgym/Desktop/VirtualGymDashboard/queries.py", line 123, in get_max_reach
+    left_max_y = left_xyz[1].max()
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/numpy/core/_methods.py", line 40, in _amax
+    return umr_maximum(a, axis, None, out, keepdims, initial, where)
+TypeError: '>=' not supported between instances of 'NoneType' and 'NoneType'
+2022-07-28 10:20:10.021 Uncaught app exception
+Traceback (most recent call last):
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/streamlit/scriptrunner/script_runner.py", line 557, in _run_script
+    exec(code, module.__dict__)
+  File "dashboard.py", line 70, in <module>
+    reach = get_max_reach(session_id)
+  File "/home/virtualgym/Desktop/VirtualGymDashboard/queries.py", line 134, in get_max_reach
+    "left": abs(left_min_x),
+TypeError: bad operand type for abs(): 'NoneType'
+2022-07-28 10:24:00.269 Uncaught app exception
+Traceback (most recent call last):
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/streamlit/scriptrunner/script_runner.py", line 557, in _run_script
+    exec(code, module.__dict__)
+  File "dashboard.py", line 34, in <module>
+    metric1.metric('Date', get_session(session_id)["Date"])
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/streamlit/elements/metric.py", line 112, in metric
+    metric_proto.body = self.parse_value(value)
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/streamlit/elements/metric.py", line 150, in parse_value
+    raise TypeError(
+TypeError: '0   2022-07-21 20:23:06
+Name: Date, dtype: datetime64[ns]' is of type <class 'pandas.core.series.Series'>, which is not an accepted type. value only accepts: int, float, str, or None. Please convert the value to an accepted type.
+2022-07-28 10:24:33.175 Uncaught app exception
+Traceback (most recent call last):
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/streamlit/scriptrunner/script_runner.py", line 557, in _run_script
+    exec(code, module.__dict__)
+  File "dashboard.py", line 63, in <module>
+    metric1.metric('Date', get_session(session_id)["Date"])
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/streamlit/elements/metric.py", line 112, in metric
+    metric_proto.body = self.parse_value(value)
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/streamlit/elements/metric.py", line 150, in parse_value
+    raise TypeError(
+TypeError: '0   2022-07-21 20:23:06
+Name: Date, dtype: datetime64[ns]' is of type <class 'pandas.core.series.Series'>, which is not an accepted type. value only accepts: int, float, str, or None. Please convert the value to an accepted type.
+2022-07-28 10:24:46.400 Uncaught app exception
+Traceback (most recent call last):
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/streamlit/scriptrunner/script_runner.py", line 557, in _run_script
+    exec(code, module.__dict__)
+  File "dashboard.py", line 63, in <module>
+    metric1.metric('Date', get_session(session_id)["Date"])
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/streamlit/elements/metric.py", line 112, in metric
+    metric_proto.body = self.parse_value(value)
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/streamlit/elements/metric.py", line 150, in parse_value
+    raise TypeError(
+TypeError: '0   2022-07-21 20:23:06
+Name: Date, dtype: datetime64[ns]' is of type <class 'pandas.core.series.Series'>, which is not an accepted type. value only accepts: int, float, str, or None. Please convert the value to an accepted type.
+2022-07-28 10:27:39.052 Uncaught app exception
+Traceback (most recent call last):
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/streamlit/scriptrunner/script_runner.py", line 557, in _run_script
+    exec(code, module.__dict__)
+  File "dashboard.py", line 63, in <module>
+    metric1.metric('Date', get_session(session_id)["Date"].strftime('%m'))
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/pandas/core/generic.py", line 5575, in __getattr__
+    return object.__getattribute__(self, name)
+AttributeError: 'Series' object has no attribute 'strftime'
+2022-07-28 10:27:58.950 Uncaught app exception
+Traceback (most recent call last):
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/streamlit/scriptrunner/script_runner.py", line 557, in _run_script
+    exec(code, module.__dict__)
+  File "dashboard.py", line 63, in <module>
+    metric1.metric('Date', get_session(session_id)["Date"].dt.strftime('%m'))
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/streamlit/elements/metric.py", line 112, in metric
+    metric_proto.body = self.parse_value(value)
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/streamlit/elements/metric.py", line 150, in parse_value
+    raise TypeError(
+TypeError: '0    07
+Name: Date, dtype: object' is of type <class 'pandas.core.series.Series'>, which is not an accepted type. value only accepts: int, float, str, or None. Please convert the value to an accepted type.
+2022-07-28 10:29:07.797 Uncaught app exception
+Traceback (most recent call last):
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/streamlit/scriptrunner/script_runner.py", line 557, in _run_script
+    exec(code, module.__dict__)
+  File "dashboard.py", line 62, in <module>
+    metric1, metric2, metric3 = st.columns(3, [4,1,1])
+TypeError: columns() takes 2 positional arguments but 3 were given
+2022-07-28 10:31:14.116 Uncaught app exception
+Traceback (most recent call last):
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/streamlit/scriptrunner/script_runner.py", line 557, in _run_script
+    exec(code, module.__dict__)
+  File "dashboard.py", line 8, in <module>
+    from helpers import *
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 682, in _load_unlocked
+KeyError: 'helpers'
+2022-07-28 10:31:26.562 Uncaught app exception
+Traceback (most recent call last):
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/streamlit/scriptrunner/script_runner.py", line 557, in _run_script
+    exec(code, module.__dict__)
+  File "dashboard.py", line 71, in <module>
+    reach = get_max_reach(session_id)
+  File "/home/virtualgym/Desktop/VirtualGymDashboard/queries.py", line 137, in get_max_reach
+    left_max_y = left_xyz[1].max()
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/numpy/core/_methods.py", line 40, in _amax
+    return umr_maximum(a, axis, None, out, keepdims, initial, where)
+TypeError: '>=' not supported between instances of 'NoneType' and 'NoneType'
+2022-07-28 10:31:36.774 Uncaught app exception
+Traceback (most recent call last):
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/streamlit/scriptrunner/script_runner.py", line 557, in _run_script
+    exec(code, module.__dict__)
+  File "dashboard.py", line 71, in <module>
+    reach = get_max_reach(session_id)
+  File "/home/virtualgym/Desktop/VirtualGymDashboard/queries.py", line 137, in get_max_reach
+    left_max_y = left_xyz[1].max()
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/numpy/core/_methods.py", line 40, in _amax
+    return umr_maximum(a, axis, None, out, keepdims, initial, where)
+TypeError: '>=' not supported between instances of 'NoneType' and 'NoneType'
+2022-07-28 10:31:57.368 Uncaught app exception
+Traceback (most recent call last):
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/streamlit/scriptrunner/script_runner.py", line 557, in _run_script
+    exec(code, module.__dict__)
+  File "dashboard.py", line 71, in <module>
+    reach = get_max_reach(session_id)
+  File "/home/virtualgym/Desktop/VirtualGymDashboard/queries.py", line 137, in get_max_reach
+    left_max_y = left_xyz[1].max()
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/numpy/core/_methods.py", line 40, in _amax
+    return umr_maximum(a, axis, None, out, keepdims, initial, where)
+TypeError: '>=' not supported between instances of 'NoneType' and 'NoneType'
+2022-07-28 10:32:00.873 Uncaught app exception
+Traceback (most recent call last):
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/streamlit/scriptrunner/script_runner.py", line 557, in _run_script
+    exec(code, module.__dict__)
+  File "dashboard.py", line 71, in <module>
+    reach = get_max_reach(session_id)
+  File "/home/virtualgym/Desktop/VirtualGymDashboard/queries.py", line 137, in get_max_reach
+    left_max_y = left_xyz[1].max()
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/numpy/core/_methods.py", line 40, in _amax
+    return umr_maximum(a, axis, None, out, keepdims, initial, where)
+TypeError: '>=' not supported between instances of 'NoneType' and 'NoneType'
+2022-07-28 10:32:03.054 Uncaught app exception
+Traceback (most recent call last):
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/streamlit/scriptrunner/script_runner.py", line 557, in _run_script
+    exec(code, module.__dict__)
+  File "dashboard.py", line 65, in <module>
+    metric3.metric('Game', str(get_session(session_id)["Game"].to_string().split()[1]))
+IndexError: list index out of range
+2022-07-28 10:32:27.686 Uncaught app exception
+Traceback (most recent call last):
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/streamlit/scriptrunner/script_runner.py", line 557, in _run_script
+    exec(code, module.__dict__)
+  File "dashboard.py", line 71, in <module>
+    reach = get_max_reach(session_id)
+  File "/home/virtualgym/Desktop/VirtualGymDashboard/queries.py", line 148, in get_max_reach
+    "left": abs(left_min_x),
+TypeError: bad operand type for abs(): 'NoneType'
+2022-07-28 10:34:09.784 Uncaught app exception
+Traceback (most recent call last):
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/streamlit/scriptrunner/script_runner.py", line 557, in _run_script
+    exec(code, module.__dict__)
+  File "dashboard.py", line 67, in <module>
+    metric3.metric('Game', game.split()[1])
+IndexError: list index out of range
+2022-07-28 10:34:22.283 Uncaught app exception
+Traceback (most recent call last):
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/streamlit/scriptrunner/script_runner.py", line 557, in _run_script
+    exec(code, module.__dict__)
+  File "dashboard.py", line 68, in <module>
+    metric3.metric('Game', game.split()[1])
+IndexError: list index out of range
+2022-07-28 10:34:41.844 Uncaught app exception
+Traceback (most recent call last):
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/streamlit/scriptrunner/script_runner.py", line 557, in _run_script
+    exec(code, module.__dict__)
+  File "dashboard.py", line 68, in <module>
+    metric3.metric('Game', game.split()[1])
+IndexError: list index out of range
+2022-07-28 10:34:49.462 Uncaught app exception
+Traceback (most recent call last):
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/streamlit/scriptrunner/script_runner.py", line 557, in _run_script
+    exec(code, module.__dict__)
+  File "dashboard.py", line 68, in <module>
+    metric3.metric('Game', game.split()[1])
+IndexError: list index out of range
+2022-07-28 10:34:59.030 Uncaught app exception
+Traceback (most recent call last):
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/streamlit/scriptrunner/script_runner.py", line 557, in _run_script
+    exec(code, module.__dict__)
+  File "dashboard.py", line 68, in <module>
+    metric3.metric('Game', game.split()[1])
+IndexError: list index out of range
+2022-07-28 10:35:03.902 Uncaught app exception
+Traceback (most recent call last):
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/streamlit/scriptrunner/script_runner.py", line 557, in _run_script
+    exec(code, module.__dict__)
+  File "dashboard.py", line 68, in <module>
+    metric3.metric('Game', game.split()[1])
+IndexError: list index out of range
+2022-07-28 10:35:39.552 Uncaught app exception
+Traceback (most recent call last):
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/streamlit/scriptrunner/script_runner.py", line 557, in _run_script
+    exec(code, module.__dict__)
+  File "dashboard.py", line 76, in <module>
+    reach = get_max_reach(session_id)
+  File "/home/virtualgym/Desktop/VirtualGymDashboard/queries.py", line 137, in get_max_reach
+    left_max_y = left_xyz[1].max()
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/numpy/core/_methods.py", line 40, in _amax
+    return umr_maximum(a, axis, None, out, keepdims, initial, where)
+TypeError: '>=' not supported between instances of 'NoneType' and 'NoneType'
+2022-07-28 10:35:43.255 Uncaught app exception
+Traceback (most recent call last):
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/streamlit/scriptrunner/script_runner.py", line 557, in _run_script
+    exec(code, module.__dict__)
+  File "dashboard.py", line 68, in <module>
+    metric3.metric('Game', game.split()[1])
+IndexError: list index out of range
+2022-07-28 10:36:23.492 Uncaught app exception
+Traceback (most recent call last):
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/streamlit/scriptrunner/script_runner.py", line 557, in _run_script
+    exec(code, module.__dict__)
+  File "dashboard.py", line 68, in <module>
+    metric3.metric('Game', game.split()[1])
+IndexError: list index out of range
+2022-07-28 10:36:30.570 Uncaught app exception
+Traceback (most recent call last):
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/streamlit/scriptrunner/script_runner.py", line 557, in _run_script
+    exec(code, module.__dict__)
+  File "dashboard.py", line 68, in <module>
+    metric3.metric('Game', game.split()[1])
+IndexError: list index out of range
+2022-07-28 10:36:54.678 Uncaught app exception
+Traceback (most recent call last):
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/streamlit/scriptrunner/script_runner.py", line 557, in _run_script
+    exec(code, module.__dict__)
+  File "dashboard.py", line 69, in <module>
+    metric3.metric('Game', game.split()[1])
+IndexError: list index out of range
+dashboard.py:68: SyntaxWarning:
+
+"is" with a literal. Did you mean "=="?
+
+2022-07-28 10:37:30.428 Uncaught app exception
+Traceback (most recent call last):
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/streamlit/scriptrunner/script_runner.py", line 557, in _run_script
+    exec(code, module.__dict__)
+  File "dashboard.py", line 69, in <module>
+    metric3.metric('Game', game.split()[1])
+IndexError: list index out of range
+2022-07-28 10:37:47.885 Uncaught app exception
+Traceback (most recent call last):
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/streamlit/scriptrunner/script_runner.py", line 557, in _run_script
+    exec(code, module.__dict__)
+  File "dashboard.py", line 69, in <module>
+    metric3.metric('Game', game.split()[1])
+IndexError: list index out of range
+2022-07-28 10:37:56.609 Uncaught app exception
+Traceback (most recent call last):
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/streamlit/scriptrunner/script_runner.py", line 557, in _run_script
+    exec(code, module.__dict__)
+  File "dashboard.py", line 69, in <module>
+    metric3.metric('Game', game.split()[1])
+IndexError: list index out of range
+2022-07-28 10:38:01.226 Uncaught app exception
+Traceback (most recent call last):
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/streamlit/scriptrunner/script_runner.py", line 557, in _run_script
+    exec(code, module.__dict__)
+  File "dashboard.py", line 69, in <module>
+    metric3.metric('Game', game.split()[1])
+IndexError: list index out of range
+2022-07-28 10:39:15.184 Uncaught app exception
+Traceback (most recent call last):
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/streamlit/scriptrunner/script_runner.py", line 557, in _run_script
+    exec(code, module.__dict__)
+  File "dashboard.py", line 67, in <module>
+    metric3.metric('Game', game.split()[1])
+IndexError: list index out of range
+2022-07-28 10:39:29.773 Uncaught app exception
+Traceback (most recent call last):
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/streamlit/scriptrunner/script_runner.py", line 557, in _run_script
+    exec(code, module.__dict__)
+  File "dashboard.py", line 75, in <module>
+    reach = get_max_reach(session_id)
+  File "/home/virtualgym/Desktop/VirtualGymDashboard/queries.py", line 148, in get_max_reach
+    "left": abs(left_min_x),
+TypeError: bad operand type for abs(): 'NoneType'
+2022-07-28 10:39:34.390 Uncaught app exception
+Traceback (most recent call last):
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/streamlit/scriptrunner/script_runner.py", line 557, in _run_script
+    exec(code, module.__dict__)
+  File "dashboard.py", line 75, in <module>
+    reach = get_max_reach(session_id)
+  File "/home/virtualgym/Desktop/VirtualGymDashboard/queries.py", line 148, in get_max_reach
+    "left": abs(left_min_x),
+TypeError: bad operand type for abs(): 'NoneType'
+2022-07-28 10:39:50.117 Uncaught app exception
+Traceback (most recent call last):
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/streamlit/scriptrunner/script_runner.py", line 557, in _run_script
+    exec(code, module.__dict__)
+  File "dashboard.py", line 76, in <module>
+    reach = get_max_reach(session_id)
+  File "/home/virtualgym/Desktop/VirtualGymDashboard/queries.py", line 148, in get_max_reach
+    "left": abs(left_min_x),
+TypeError: bad operand type for abs(): 'NoneType'
+2022-07-28 10:40:06.728 Uncaught app exception
+Traceback (most recent call last):
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/streamlit/scriptrunner/script_runner.py", line 557, in _run_script
+    exec(code, module.__dict__)
+  File "dashboard.py", line 76, in <module>
+    reach = get_max_reach(session_id)
+  File "/home/virtualgym/Desktop/VirtualGymDashboard/queries.py", line 148, in get_max_reach
+    "left": abs(left_min_x),
+TypeError: bad operand type for abs(): 'NoneType'
+2022-07-28 10:40:09.558 Uncaught app exception
+Traceback (most recent call last):
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/streamlit/scriptrunner/script_runner.py", line 557, in _run_script
+    exec(code, module.__dict__)
+  File "dashboard.py", line 76, in <module>
+    reach = get_max_reach(session_id)
+  File "/home/virtualgym/Desktop/VirtualGymDashboard/queries.py", line 148, in get_max_reach
+    "left": abs(left_min_x),
+TypeError: bad operand type for abs(): 'NoneType'
+2022-07-28 10:40:37.634 Uncaught app exception
+Traceback (most recent call last):
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/streamlit/scriptrunner/script_runner.py", line 557, in _run_script
+    exec(code, module.__dict__)
+  File "dashboard.py", line 76, in <module>
+    reach = get_max_reach(session_id)
+  File "/home/virtualgym/Desktop/VirtualGymDashboard/queries.py", line 148, in get_max_reach
+    "left": abs(left_min_x),
+TypeError: bad operand type for abs(): 'NoneType'
+2022-07-28 10:40:42.741 Uncaught app exception
+Traceback (most recent call last):
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/streamlit/scriptrunner/script_runner.py", line 557, in _run_script
+    exec(code, module.__dict__)
+  File "dashboard.py", line 76, in <module>
+    reach = get_max_reach(session_id)
+  File "/home/virtualgym/Desktop/VirtualGymDashboard/queries.py", line 148, in get_max_reach
+    "left": abs(left_min_x),
+TypeError: bad operand type for abs(): 'NoneType'
+2022-07-28 10:40:56.804 Uncaught app exception
+Traceback (most recent call last):
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/streamlit/scriptrunner/script_runner.py", line 557, in _run_script
+    exec(code, module.__dict__)
+  File "dashboard.py", line 76, in <module>
+    reach = get_max_reach(session_id)
+  File "/home/virtualgym/Desktop/VirtualGymDashboard/queries.py", line 148, in get_max_reach
+    "left": abs(left_min_x),
+TypeError: bad operand type for abs(): 'NoneType'
+2022-07-28 10:41:06.022 Uncaught app exception
+Traceback (most recent call last):
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/streamlit/scriptrunner/script_runner.py", line 557, in _run_script
+    exec(code, module.__dict__)
+  File "dashboard.py", line 76, in <module>
+    reach = get_max_reach(session_id)
+  File "/home/virtualgym/Desktop/VirtualGymDashboard/queries.py", line 148, in get_max_reach
+    "left": abs(left_min_x),
+TypeError: bad operand type for abs(): 'NoneType'
+2022-07-28 10:41:07.786 Uncaught app exception
+Traceback (most recent call last):
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/streamlit/scriptrunner/script_runner.py", line 557, in _run_script
+    exec(code, module.__dict__)
+  File "dashboard.py", line 76, in <module>
+    reach = get_max_reach(session_id)
+  File "/home/virtualgym/Desktop/VirtualGymDashboard/queries.py", line 148, in get_max_reach
+    "left": abs(left_min_x),
+TypeError: bad operand type for abs(): 'NoneType'
+2022-07-28 10:41:26.713 Uncaught app exception
+Traceback (most recent call last):
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/streamlit/scriptrunner/script_runner.py", line 557, in _run_script
+    exec(code, module.__dict__)
+  File "dashboard.py", line 76, in <module>
+    reach = get_max_reach(session_id)
+  File "/home/virtualgym/Desktop/VirtualGymDashboard/queries.py", line 148, in get_max_reach
+    "left": abs(left_min_x),
+TypeError: bad operand type for abs(): 'NoneType'
+2022-07-28 10:41:58.273 Uncaught app exception
+Traceback (most recent call last):
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/streamlit/scriptrunner/script_runner.py", line 557, in _run_script
+    exec(code, module.__dict__)
+  File "dashboard.py", line 73, in <module>
+    reach = get_max_reach(session_id)
+  File "/home/virtualgym/Desktop/VirtualGymDashboard/queries.py", line 148, in get_max_reach
+    "left": abs(left_min_x),
+TypeError: bad operand type for abs(): 'NoneType'
+2022-07-28 10:42:16.935 Uncaught app exception
+Traceback (most recent call last):
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/streamlit/scriptrunner/script_runner.py", line 557, in _run_script
+    exec(code, module.__dict__)
+  File "dashboard.py", line 63, in <module>
+    metric1.metric('Date', get_session(session_id)["Date"].dt.strftime('%Y-%m-%d').to_string(index=False)) or "Unknown"
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/streamlit/__init__.py", line 454, in _transparent_write
+    write(*args)
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/streamlit/elements/write.py", line 234, in write
+    arg._repr_html_(),
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/streamlit/delta_generator.py", line 328, in wrapper
+    raise StreamlitAPIException(message)
+streamlit.errors.StreamlitAPIException: `_repr_html_()` is not a valid Streamlit command.
+2022-07-28 10:42:38.346 Uncaught app exception
+Traceback (most recent call last):
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/streamlit/scriptrunner/script_runner.py", line 557, in _run_script
+    exec(code, module.__dict__)
+  File "dashboard.py", line 73, in <module>
+    reach = get_max_reach(session_id)
+  File "/home/virtualgym/Desktop/VirtualGymDashboard/queries.py", line 148, in get_max_reach
+    "left": abs(left_min_x),
+TypeError: bad operand type for abs(): 'NoneType'
+2022-07-28 10:42:53.237 Uncaught app exception
+Traceback (most recent call last):
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/streamlit/scriptrunner/script_runner.py", line 557, in _run_script
+    exec(code, module.__dict__)
+  File "dashboard.py", line 72, in <module>
+    reach = get_max_reach(session_id)
+  File "/home/virtualgym/Desktop/VirtualGymDashboard/queries.py", line 148, in get_max_reach
+    "left": abs(left_min_x),
+TypeError: bad operand type for abs(): 'NoneType'
+2022-07-28 10:42:56.448 Uncaught app exception
+Traceback (most recent call last):
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/streamlit/scriptrunner/script_runner.py", line 557, in _run_script
+    exec(code, module.__dict__)
+  File "dashboard.py", line 72, in <module>
+    reach = get_max_reach(session_id)
+  File "/home/virtualgym/Desktop/VirtualGymDashboard/queries.py", line 148, in get_max_reach
+    "left": abs(left_min_x),
+TypeError: bad operand type for abs(): 'NoneType'
+2022-07-28 10:47:37.645 Uncaught app exception
+Traceback (most recent call last):
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/streamlit/scriptrunner/script_runner.py", line 557, in _run_script
+    exec(code, module.__dict__)
+  File "dashboard.py", line 72, in <module>
+    reach = get_max_reach(session_id)
+  File "/home/virtualgym/Desktop/VirtualGymDashboard/queries.py", line 137, in get_max_reach
+    left_max_y = left_xyz[1].max()
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/numpy/core/_methods.py", line 40, in _amax
+    return umr_maximum(a, axis, None, out, keepdims, initial, where)
+TypeError: '>=' not supported between instances of 'NoneType' and 'NoneType'
+2022-07-28 10:50:53.202 Uncaught app exception
+Traceback (most recent call last):
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/streamlit/scriptrunner/script_runner.py", line 557, in _run_script
+    exec(code, module.__dict__)
+  File "dashboard.py", line 72, in <module>
+    reach = get_max_reach(session_id)
+  File "/home/virtualgym/Desktop/VirtualGymDashboard/queries.py", line 137, in get_max_reach
+    left_max_y = left_xyz[1].max()
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/numpy/core/_methods.py", line 40, in _amax
+    return umr_maximum(a, axis, None, out, keepdims, initial, where)
+TypeError: '>=' not supported between instances of 'NoneType' and 'NoneType'
+2022-07-28 10:50:59.740 Uncaught app exception
+Traceback (most recent call last):
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/streamlit/scriptrunner/script_runner.py", line 557, in _run_script
+    exec(code, module.__dict__)
+  File "dashboard.py", line 72, in <module>
+    reach = get_max_reach(session_id)
+  File "/home/virtualgym/Desktop/VirtualGymDashboard/queries.py", line 137, in get_max_reach
+    left_max_y = left_xyz[1].max()
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/numpy/core/_methods.py", line 40, in _amax
+    return umr_maximum(a, axis, None, out, keepdims, initial, where)
+TypeError: '>=' not supported between instances of 'NoneType' and 'NoneType'
+2022-07-28 10:51:12.806 Uncaught app exception
+Traceback (most recent call last):
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/streamlit/scriptrunner/script_runner.py", line 557, in _run_script
+    exec(code, module.__dict__)
+  File "dashboard.py", line 72, in <module>
+    reach = get_max_reach(session_id)
+  File "/home/virtualgym/Desktop/VirtualGymDashboard/queries.py", line 137, in get_max_reach
+    left_max_y = left_xyz[1].max()
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/numpy/core/_methods.py", line 40, in _amax
+    return umr_maximum(a, axis, None, out, keepdims, initial, where)
+TypeError: '>=' not supported between instances of 'NoneType' and 'NoneType'
+2022-07-28 10:51:40.189 Uncaught app exception
+Traceback (most recent call last):
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/streamlit/scriptrunner/script_runner.py", line 557, in _run_script
+    exec(code, module.__dict__)
+  File "dashboard.py", line 72, in <module>
+    reach = get_max_reach(session_id)
+  File "/home/virtualgym/Desktop/VirtualGymDashboard/queries.py", line 137, in get_max_reach
+    left_max_y = left_xyz[1].max()
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/numpy/core/_methods.py", line 40, in _amax
+    return umr_maximum(a, axis, None, out, keepdims, initial, where)
+TypeError: '>=' not supported between instances of 'NoneType' and 'NoneType'
+2022-07-28 10:51:58.120 Uncaught app exception
+Traceback (most recent call last):
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/streamlit/scriptrunner/script_runner.py", line 557, in _run_script
+    exec(code, module.__dict__)
+  File "dashboard.py", line 72, in <module>
+    reach = get_max_reach(session_id)
+  File "/home/virtualgym/Desktop/VirtualGymDashboard/queries.py", line 137, in get_max_reach
+    left_max_y = left_xyz[1].max()
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/numpy/core/_methods.py", line 40, in _amax
+    return umr_maximum(a, axis, None, out, keepdims, initial, where)
+TypeError: '>=' not supported between instances of 'NoneType' and 'NoneType'
+2022-07-28 10:52:00.451 Uncaught app exception
+Traceback (most recent call last):
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/streamlit/scriptrunner/script_runner.py", line 557, in _run_script
+    exec(code, module.__dict__)
+  File "dashboard.py", line 72, in <module>
+    reach = get_max_reach(session_id)
+  File "/home/virtualgym/Desktop/VirtualGymDashboard/queries.py", line 137, in get_max_reach
+    left_max_y = left_xyz[1].max()
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/numpy/core/_methods.py", line 40, in _amax
+    return umr_maximum(a, axis, None, out, keepdims, initial, where)
+TypeError: '>=' not supported between instances of 'NoneType' and 'NoneType'
+2022-07-28 10:52:06.258 Uncaught app exception
+Traceback (most recent call last):
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/streamlit/scriptrunner/script_runner.py", line 557, in _run_script
+    exec(code, module.__dict__)
+  File "dashboard.py", line 72, in <module>
+    reach = get_max_reach(session_id)
+  File "/home/virtualgym/Desktop/VirtualGymDashboard/queries.py", line 148, in get_max_reach
+    "left": abs(left_min_x),
+TypeError: bad operand type for abs(): 'NoneType'
+2022-07-28 10:52:10.107 Uncaught app exception
+Traceback (most recent call last):
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/streamlit/scriptrunner/script_runner.py", line 557, in _run_script
+    exec(code, module.__dict__)
+  File "dashboard.py", line 72, in <module>
+    reach = get_max_reach(session_id)
+  File "/home/virtualgym/Desktop/VirtualGymDashboard/queries.py", line 148, in get_max_reach
+    "left": abs(left_min_x),
+TypeError: bad operand type for abs(): 'NoneType'
+2022-07-28 10:53:00.537 Uncaught app exception
+Traceback (most recent call last):
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/streamlit/scriptrunner/script_runner.py", line 557, in _run_script
+    exec(code, module.__dict__)
+  File "dashboard.py", line 72, in <module>
+    reach = get_max_reach(session_id)
+  File "/home/virtualgym/Desktop/VirtualGymDashboard/queries.py", line 148, in get_max_reach
+    "left": abs(left_min_x),
+TypeError: bad operand type for abs(): 'NoneType'
+2022-07-28 10:53:55.552 Uncaught app exception
+Traceback (most recent call last):
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/streamlit/scriptrunner/script_runner.py", line 557, in _run_script
+    exec(code, module.__dict__)
+  File "dashboard.py", line 72, in <module>
+    reach = get_max_reach(session_id)
+  File "/home/virtualgym/Desktop/VirtualGymDashboard/queries.py", line 137, in get_max_reach
+    left_max_y = left_xyz[1].max()
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/numpy/core/_methods.py", line 40, in _amax
+    return umr_maximum(a, axis, None, out, keepdims, initial, where)
+TypeError: '>=' not supported between instances of 'NoneType' and 'NoneType'
+2022-07-28 10:53:58.746 Uncaught app exception
+Traceback (most recent call last):
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/streamlit/scriptrunner/script_runner.py", line 557, in _run_script
+    exec(code, module.__dict__)
+  File "dashboard.py", line 72, in <module>
+    reach = get_max_reach(session_id)
+  File "/home/virtualgym/Desktop/VirtualGymDashboard/queries.py", line 137, in get_max_reach
+    left_max_y = left_xyz[1].max()
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/numpy/core/_methods.py", line 40, in _amax
+    return umr_maximum(a, axis, None, out, keepdims, initial, where)
+TypeError: '>=' not supported between instances of 'NoneType' and 'NoneType'
+2022-07-28 10:54:32.900 Uncaught app exception
+Traceback (most recent call last):
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/streamlit/scriptrunner/script_runner.py", line 557, in _run_script
+    exec(code, module.__dict__)
+  File "dashboard.py", line 72, in <module>
+    reach = get_max_reach(session_id)
+  File "/home/virtualgym/Desktop/VirtualGymDashboard/queries.py", line 136, in get_max_reach
+    left_max_y = left_xyz[1].max()
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/numpy/core/_methods.py", line 40, in _amax
+    return umr_maximum(a, axis, None, out, keepdims, initial, where)
+TypeError: '>=' not supported between instances of 'NoneType' and 'NoneType'
+2022-07-28 10:54:37.040 Uncaught app exception
+Traceback (most recent call last):
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/streamlit/scriptrunner/script_runner.py", line 557, in _run_script
+    exec(code, module.__dict__)
+  File "dashboard.py", line 72, in <module>
+    reach = get_max_reach(session_id)
+  File "/home/virtualgym/Desktop/VirtualGymDashboard/queries.py", line 136, in get_max_reach
+    left_max_y = left_xyz[1].max()
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/numpy/core/_methods.py", line 40, in _amax
+    return umr_maximum(a, axis, None, out, keepdims, initial, where)
+TypeError: '>=' not supported between instances of 'NoneType' and 'NoneType'
+2022-07-28 10:54:46.237 Uncaught app exception
+Traceback (most recent call last):
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/streamlit/scriptrunner/script_runner.py", line 557, in _run_script
+    exec(code, module.__dict__)
+  File "dashboard.py", line 72, in <module>
+    reach = get_max_reach(session_id)
+  File "/home/virtualgym/Desktop/VirtualGymDashboard/queries.py", line 136, in get_max_reach
+    left_max_y = left_xyz[1].max()
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/numpy/core/_methods.py", line 40, in _amax
+    return umr_maximum(a, axis, None, out, keepdims, initial, where)
+TypeError: '>=' not supported between instances of 'NoneType' and 'NoneType'
+2022-07-28 10:54:47.963 Uncaught app exception
+Traceback (most recent call last):
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/streamlit/scriptrunner/script_runner.py", line 557, in _run_script
+    exec(code, module.__dict__)
+  File "dashboard.py", line 72, in <module>
+    reach = get_max_reach(session_id)
+  File "/home/virtualgym/Desktop/VirtualGymDashboard/queries.py", line 136, in get_max_reach
+    left_max_y = left_xyz[1].max()
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/numpy/core/_methods.py", line 40, in _amax
+    return umr_maximum(a, axis, None, out, keepdims, initial, where)
+TypeError: '>=' not supported between instances of 'NoneType' and 'NoneType'
+2022-07-28 10:54:56.917 Uncaught app exception
+Traceback (most recent call last):
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/streamlit/scriptrunner/script_runner.py", line 557, in _run_script
+    exec(code, module.__dict__)
+  File "dashboard.py", line 72, in <module>
+    reach = get_max_reach(session_id)
+  File "/home/virtualgym/Desktop/VirtualGymDashboard/queries.py", line 136, in get_max_reach
+    left_max_y = left_xyz[1].max()
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/numpy/core/_methods.py", line 40, in _amax
+    return umr_maximum(a, axis, None, out, keepdims, initial, where)
+TypeError: '>=' not supported between instances of 'NoneType' and 'NoneType'
+2022-07-28 10:55:31.014 Uncaught app exception
+Traceback (most recent call last):
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/streamlit/scriptrunner/script_runner.py", line 557, in _run_script
+    exec(code, module.__dict__)
+  File "dashboard.py", line 71, in <module>
+    reach = get_max_reach(session_id)
+  File "/home/virtualgym/Desktop/VirtualGymDashboard/queries.py", line 136, in get_max_reach
+    left_max_y = left_xyz[1].max()
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/numpy/core/_methods.py", line 40, in _amax
+    return umr_maximum(a, axis, None, out, keepdims, initial, where)
+TypeError: '>=' not supported between instances of 'NoneType' and 'NoneType'
+2022-07-28 11:01:12.957 Uncaught app exception
+Traceback (most recent call last):
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/streamlit/scriptrunner/script_runner.py", line 557, in _run_script
+    exec(code, module.__dict__)
+  File "dashboard.py", line 71, in <module>
+    reach = get_max_reach(session_id)
+  File "/home/virtualgym/Desktop/VirtualGymDashboard/queries.py", line 136, in get_max_reach
+    left_max_y = left_xyz[1].max()
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/numpy/core/_methods.py", line 40, in _amax
+    return umr_maximum(a, axis, None, out, keepdims, initial, where)
+TypeError: '>=' not supported between instances of 'NoneType' and 'NoneType'
+2022-07-28 11:01:18.628 Uncaught app exception
+Traceback (most recent call last):
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/streamlit/scriptrunner/script_runner.py", line 557, in _run_script
+    exec(code, module.__dict__)
+  File "dashboard.py", line 71, in <module>
+    reach = get_max_reach(session_id)
+  File "/home/virtualgym/Desktop/VirtualGymDashboard/queries.py", line 136, in get_max_reach
+    left_max_y = left_xyz[1].max()
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/numpy/core/_methods.py", line 40, in _amax
+    return umr_maximum(a, axis, None, out, keepdims, initial, where)
+TypeError: '>=' not supported between instances of 'NoneType' and 'NoneType'
+2022-07-28 11:01:19.946 Uncaught app exception
+Traceback (most recent call last):
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/streamlit/scriptrunner/script_runner.py", line 557, in _run_script
+    exec(code, module.__dict__)
+  File "dashboard.py", line 71, in <module>
+    reach = get_max_reach(session_id)
+  File "/home/virtualgym/Desktop/VirtualGymDashboard/queries.py", line 136, in get_max_reach
+    left_max_y = left_xyz[1].max()
+  File "/home/virtualgym/.local/lib/python3.8/site-packages/numpy/core/_methods.py", line 40, in _amax
+    return umr_maximum(a, axis, None, out, keepdims, initial, where)
+TypeError: '>=' not supported between instances of 'NoneType' and 'NoneType'

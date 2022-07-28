@@ -99,4 +99,23 @@ def plot_hand_replay(session_id: str):
     fig.update_layout(paper_bgcolor="#13161C", plot_bgcolor="#252A33")
     return fig
 
+def plot_velocity_time(session_id: str, column: str, line=None):
+    # display a plot of the velocity of the right and left hand on one graph
+    data = get_velocity(session_id)
+    fig = px.line(data, x="time", y=column)
+    fig.update_layout(paper_bgcolor="#13161C", plot_bgcolor="#252A33")
+    if line is not None:
+        # add a red line at the max velocity
+        fig.add_trace(
+            go.Scatter(
+                x=[0, data["time"].max()],
+                y=[line, line],
+                mode='lines',
+                line=dict(color='red', width=4),
+                name="max velocity"
+            )
+        )
+    return fig
+
+
         
